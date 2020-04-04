@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchesByRoundViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="dRq-U5-tc8" id="Cld-7Q-IE0"/>
+                <outlet property="dropdownMenuBtn" destination="rOj-4U-vuH" id="nZv-Ls-hc4"/>
+                <outlet property="groupsBtnHeight" destination="mfk-X7-302" id="GVz-D4-fbc"/>
+                <outlet property="groupsDropDownBtn" destination="W1G-yK-EbN" id="xjk-Fo-VGe"/>
+                <outlet property="groupsDropdownArrow" destination="5wT-8t-9fw" id="zNk-Ir-I23"/>
+                <outlet property="loadingLbl" destination="AsT-P4-SWq" id="zQU-ay-8R0"/>
+                <outlet property="sponsorImg" destination="1Og-fW-XYz" id="r3N-tk-Rnb"/>
+                <outlet property="sponsorImgHeightConstraint" destination="KqZ-qa-Bms" id="IXZ-0c-2QH"/>
+                <outlet property="tableView" destination="dnp-ng-zsU" id="2oE-sW-B5e"/>
+                <outlet property="view" destination="lvG-Zr-eMv" id="uxY-a3-329"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lvG-Zr-eMv">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dnp-ng-zsU">
+                    <rect key="frame" x="10" y="81" width="300" height="325"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8V0-pF-VQC"/>
+                        <outlet property="delegate" destination="-1" id="EKs-u8-MXs"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOj-4U-vuH">
+                    <rect key="frame" x="16" y="33" width="288" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <connections>
+                        <action selector="dropdownBtnPressed:" destination="-1" eventType="touchUpInside" id="ujZ-jt-n2v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iK-jv-cmH">
+                    <rect key="frame" x="22" y="40" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Z1u-IZ-OJp"/>
+                        <constraint firstAttribute="width" constant="23" id="xpn-X3-iE3"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Comboarrow"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1G-yK-EbN">
+                    <rect key="frame" x="16" y="76" width="288" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="mfk-X7-302"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <connections>
+                        <action selector="groupsDropDownBtnPressed:" destination="-1" eventType="touchUpInside" id="2am-DY-2C3"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wT-8t-9fw">
+                    <rect key="frame" x="22" y="65" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="NhX-rV-duE"/>
+                        <constraint firstAttribute="width" constant="23" id="OsR-y9-UND"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Comboarrow"/>
+                    <connections>
+                        <action selector="groupsDropDownBtnPressed:" destination="-1" eventType="touchUpInside" id="CgP-6z-Oek"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dRq-U5-tc8">
+                    <rect key="frame" x="150" y="185.5" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل البيانات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsT-P4-SWq">
+                    <rect key="frame" x="13" y="223.5" width="294" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="K29-MH-U7N"/>
+                        <constraint firstAttribute="height" constant="21" id="OXP-fp-EeM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-fW-XYz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="KqZ-qa-Bms"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.9410743117" green="0.94123536350000003" blue="0.94106405969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rOj-4U-vuH" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" constant="16" id="7Eq-Fy-jkC"/>
+                <constraint firstItem="6iK-jv-cmH" firstAttribute="centerY" secondItem="rOj-4U-vuH" secondAttribute="centerY" id="91A-Az-DEZ"/>
+                <constraint firstAttribute="trailing" secondItem="dnp-ng-zsU" secondAttribute="trailing" constant="10" id="9if-aj-Mff"/>
+                <constraint firstItem="AsT-P4-SWq" firstAttribute="top" secondItem="dRq-U5-tc8" secondAttribute="bottom" constant="18" id="Aa8-3o-NOh"/>
+                <constraint firstAttribute="bottom" secondItem="dnp-ng-zsU" secondAttribute="bottom" constant="10" id="IK5-Nk-xxg"/>
+                <constraint firstAttribute="trailing" secondItem="rOj-4U-vuH" secondAttribute="trailing" constant="16" id="J8f-zQ-Kai"/>
+                <constraint firstItem="dRq-U5-tc8" firstAttribute="centerX" secondItem="dnp-ng-zsU" secondAttribute="centerX" id="LIZ-5h-Ovt"/>
+                <constraint firstItem="dnp-ng-zsU" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" constant="10" id="OkI-qR-VwZ"/>
+                <constraint firstItem="AsT-P4-SWq" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" constant="13" id="RE0-SU-Q4z"/>
+                <constraint firstAttribute="trailing" secondItem="W1G-yK-EbN" secondAttribute="trailing" constant="16" id="Ttq-iZ-BRj"/>
+                <constraint firstItem="AsT-P4-SWq" firstAttribute="top" secondItem="dRq-U5-tc8" secondAttribute="bottom" constant="18" id="WRU-HK-F4c"/>
+                <constraint firstItem="6iK-jv-cmH" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" constant="22" id="YJR-eR-XWe"/>
+                <constraint firstItem="W1G-yK-EbN" firstAttribute="top" secondItem="rOj-4U-vuH" secondAttribute="bottom" constant="8" id="ZUy-eO-Muf"/>
+                <constraint firstAttribute="trailing" secondItem="1Og-fW-XYz" secondAttribute="trailing" id="dYy-Bw-csl"/>
+                <constraint firstItem="dRq-U5-tc8" firstAttribute="centerY" secondItem="dnp-ng-zsU" secondAttribute="centerY" constant="-48" id="ejS-f4-ygG"/>
+                <constraint firstItem="dnp-ng-zsU" firstAttribute="top" secondItem="W1G-yK-EbN" secondAttribute="bottom" constant="5" id="f8I-Bd-qXK"/>
+                <constraint firstItem="rOj-4U-vuH" firstAttribute="top" secondItem="1Og-fW-XYz" secondAttribute="bottom" constant="8" id="jND-fd-VgE"/>
+                <constraint firstItem="W1G-yK-EbN" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" constant="16" id="qGu-4I-zSR"/>
+                <constraint firstItem="5wT-8t-9fw" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" constant="22" id="sNj-UW-xz4"/>
+                <constraint firstAttribute="trailing" secondItem="AsT-P4-SWq" secondAttribute="trailing" constant="13" id="tZF-Ib-laJ"/>
+                <constraint firstItem="5wT-8t-9fw" firstAttribute="centerY" secondItem="W1G-yK-EbN" secondAttribute="centerY" constant="-1" id="v2g-lL-8mX"/>
+                <constraint firstItem="1Og-fW-XYz" firstAttribute="top" secondItem="lvG-Zr-eMv" secondAttribute="top" id="wCx-aq-QIk"/>
+                <constraint firstItem="1Og-fW-XYz" firstAttribute="leading" secondItem="lvG-Zr-eMv" secondAttribute="leading" id="xgb-A2-UCB"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comboarrow" width="24" height="24"/>
+    </resources>
+</document>

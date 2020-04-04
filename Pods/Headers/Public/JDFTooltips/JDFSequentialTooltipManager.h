@@ -1,0 +1,5 @@
+XSym
+0062
+838d3429cbac1b632a8111296528ddb7
+../../../JDFTooltips/Pod/Classes/JDFSequentialTooltipManager.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

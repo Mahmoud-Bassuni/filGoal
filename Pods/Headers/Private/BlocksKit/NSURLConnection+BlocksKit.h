@@ -1,0 +1,5 @@
+XSym
+0083
+7e83e8b6af2a63f805fa891734fc03bb
+../../../BlocksKit/BlocksKit/DynamicDelegate/Foundation/NSURLConnection+BlocksKit.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

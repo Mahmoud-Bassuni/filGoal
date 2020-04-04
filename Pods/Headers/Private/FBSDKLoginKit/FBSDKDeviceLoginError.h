@@ -1,0 +1,5 @@
+XSym
+0083
+b6ab81bd272685b35515d1b72c41da50
+../../../FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKDeviceLoginError.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

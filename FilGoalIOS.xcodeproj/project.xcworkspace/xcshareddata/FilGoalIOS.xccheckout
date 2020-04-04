@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFC9713D-7A13-483A-87D4-AD85B363A3A2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>17F0F4F034B8670B6D08774B49B58F24DC24F2C2</key>
+		<string>https://github.com/sarmady/FilGoalIOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FilGoalIOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>17F0F4F034B8670B6D08774B49B58F24DC24F2C2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sarmady/FilGoalIOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>17F0F4F034B8670B6D08774B49B58F24DC24F2C2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>17F0F4F034B8670B6D08774B49B58F24DC24F2C2</string>
+			<key>IDESourceControlWCCName</key>
+<<<<<<< HEAD
+			<string>FilGoaliOSCopy</string>
+=======
+			<string>FilGoalIOSCopy4</string>
+>>>>>>> origin/FilGoaliOSCopy
+		</dict>
+	</array>
+</dict>
+</plist>

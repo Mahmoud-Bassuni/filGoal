@@ -1,0 +1,6 @@
+module Pods_FilGoalIOS {
+  umbrella header "Pods-FilGoalIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

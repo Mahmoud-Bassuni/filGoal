@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTArabic-Medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchesViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="mof-XG-XIH" id="HXP-Px-LCd"/>
+                <outlet property="noMatchesLbl" destination="D7s-7l-Yhy" id="ISp-16-C1m"/>
+                <outlet property="tableView" destination="UKv-ub-TcS" id="W3V-Yf-Pcr"/>
+                <outlet property="tabsView" destination="kVI-If-4k8" id="3gk-fV-PDV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mof-XG-XIH">
+                    <rect key="frame" x="150" y="230" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل المباريات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7s-7l-Yhy">
+                    <rect key="frame" x="0.0" y="259" width="320" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="8i2-eP-zDt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="8" sectionFooterHeight="8" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-ub-TcS">
+                    <rect key="frame" x="10" y="83" width="300" height="377"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="22A-GF-JHg"/>
+                        <outlet property="delegate" destination="-1" id="Tad-6E-mmc"/>
+                    </connections>
+                </tableView>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVI-If-4k8">
+                    <rect key="frame" x="47" y="36" width="226" height="37"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="U0w-3T-6tG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UKv-ub-TcS" secondAttribute="trailing" constant="10" id="3sV-6A-h7y"/>
+                <constraint firstAttribute="trailing" secondItem="D7s-7l-Yhy" secondAttribute="trailing" id="D57-4E-bHo"/>
+                <constraint firstAttribute="bottom" secondItem="UKv-ub-TcS" secondAttribute="bottom" constant="20" id="DGg-IQ-wXe"/>
+                <constraint firstItem="mof-XG-XIH" firstAttribute="centerX" secondItem="D7s-7l-Yhy" secondAttribute="centerX" id="DRu-Sc-Bsq"/>
+                <constraint firstItem="mof-XG-XIH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OO8-wh-zba"/>
+                <constraint firstItem="UKv-ub-TcS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VkF-jv-vxv"/>
+                <constraint firstItem="kVI-If-4k8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b11-xE-51o"/>
+                <constraint firstItem="D7s-7l-Yhy" firstAttribute="top" secondItem="mof-XG-XIH" secondAttribute="bottom" constant="9" id="dMb-cw-AQ6"/>
+                <constraint firstItem="kVI-If-4k8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="fr6-Pw-pVl"/>
+                <constraint firstItem="D7s-7l-Yhy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hOr-Rt-OBk"/>
+                <constraint firstItem="mof-XG-XIH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hVj-xS-h1s"/>
+                <constraint firstItem="kVI-If-4k8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="l33-HH-zu1"/>
+                <constraint firstItem="D7s-7l-Yhy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lVx-5Z-wWr"/>
+                <constraint firstAttribute="trailing" secondItem="kVI-If-4k8" secondAttribute="trailing" constant="47" id="lc1-Vz-hpY"/>
+                <constraint firstItem="UKv-ub-TcS" firstAttribute="top" secondItem="kVI-If-4k8" secondAttribute="bottom" constant="10" id="xzs-O4-TMJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247" y="386"/>
+        </view>
+    </objects>
+</document>

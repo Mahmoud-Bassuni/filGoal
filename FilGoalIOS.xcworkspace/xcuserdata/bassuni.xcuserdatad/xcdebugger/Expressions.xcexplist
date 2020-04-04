@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[NewsDetailsViewControllerWithWKWebView initWithNewsItem:withNewsList:]:NewsDetailsViewControllerWithWKWebView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.newsItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__54-[NewsDetailsViewControllerWithWKWebView LoadNewsItem]_block_invoke:NewsDetailsViewControllerWithWKWebView.m">
+      </ContextState>
+      <ContextState
+         contextName = "TestEnum.headers.getter:MenuEnum.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "x">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NewsDetailsVC.numberOfSections(in:):NewsDetailsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sectionsList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NetworkAdapter.request&lt;A&gt;(target:success:error:failure:):NetworkAdapter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.statusCode">
+            </PersistentString>
+            <PersistentString
+               value = "err.">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[WServicesManager getDataWithURLString:andParameters:WithObjectName:andAuthenticationType:success:failure:]:WServicesManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "parameters">
+            </PersistentString>
+            <PersistentString
+               value = "[NSString stringWithFormat:@&quot;%@&quot;, [[[WServicesManager alloc]init] getHMACHeaderStringWithUrl:urlString andParameters:parameters andTimestamp:timestamp]]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NewsDetailsVC.loadHtmlStringToWKWebView():NewsDetailsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "x.newsDeatilsData.newsDescription">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsHomeViewController LoadMoreNewsItem]:NewsHomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.typeId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static MoyaProvider.defaultEndpointMapping(for:):MoyaProvider+Defaults.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__37-[SplashViewController getTimeOffest]_block_invoke:SplashViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "andParameters">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NewsDetailsViewControllerWithWKWebView viewDidAppear:]:NewsDetailsViewControllerWithWKWebView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.newsItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

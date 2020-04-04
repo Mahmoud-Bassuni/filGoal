@@ -1,0 +1,5 @@
+XSym
+0098
+cf97bb51afd722b4b98ca90b984b7d2a
+../../../FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3_21.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

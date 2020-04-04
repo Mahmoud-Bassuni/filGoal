@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeaturedAreaSliderViewController">
+            <connections>
+                <outlet property="pageControl" destination="sCB-yj-qgk" id="4QM-jQ-aDU"/>
+                <outlet property="pageControlContainerV" destination="MXj-rX-pfq" id="0tQ-JE-llw"/>
+                <outlet property="scrollView" destination="sSp-sN-BfA" id="Zc1-Mi-Ndo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="dTU-ke-AuP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSp-sN-BfA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" tag="4000" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="VgV-PV-rqG">
+                            <rect key="frame" x="150" y="105" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VgV-PV-rqG" firstAttribute="centerX" secondItem="sSp-sN-BfA" secondAttribute="centerX" id="AaU-WZ-BtA"/>
+                        <constraint firstAttribute="bottom" secondItem="VgV-PV-rqG" secondAttribute="bottom" constant="105" id="Jix-ST-PG1"/>
+                        <constraint firstAttribute="trailing" secondItem="VgV-PV-rqG" secondAttribute="trailing" constant="150" id="Sib-qx-53H"/>
+                        <constraint firstItem="VgV-PV-rqG" firstAttribute="centerY" secondItem="sSp-sN-BfA" secondAttribute="centerY" id="doE-nM-cX8"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="kzA-77-CtE"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXj-rX-pfq">
+                    <rect key="frame" x="10" y="200" width="90" height="20"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="sCB-yj-qgk">
+                            <rect key="frame" x="9" y="0.0" width="72" height="20"/>
+                            <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.098039215686274508" alpha="0.71739201570680622" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="WUg-fO-SXM"/>
+                            </constraints>
+                            <color key="pageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <color key="currentPageIndicatorTintColor" red="0.94391500949859619" green="0.64672845602035522" blue="0.00048106684698723257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="updatePage:" destination="-1" eventType="valueChanged" id="Uvq-2z-Csy"/>
+                            </connections>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.098039215686274508" blue="0.098039215686274508" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="sCB-yj-qgk" firstAttribute="top" secondItem="MXj-rX-pfq" secondAttribute="top" id="4uR-gz-cjf"/>
+                        <constraint firstAttribute="bottom" secondItem="sCB-yj-qgk" secondAttribute="bottom" id="9Jl-JS-cQ9"/>
+                        <constraint firstAttribute="height" constant="20" id="If2-io-jml"/>
+                        <constraint firstAttribute="trailing" secondItem="sCB-yj-qgk" secondAttribute="trailing" constant="9" id="IxO-Rq-IJA"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="JZT-Av-bR2"/>
+                        <constraint firstItem="sCB-yj-qgk" firstAttribute="leading" secondItem="MXj-rX-pfq" secondAttribute="leading" constant="9" id="ZhE-IA-zRB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12900903820991516" green="0.14092501997947693" blue="0.15756914019584656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sSp-sN-BfA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gha-tj-YRG"/>
+                <constraint firstItem="sSp-sN-BfA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UIb-tw-1vr"/>
+                <constraint firstItem="MXj-rX-pfq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="XsQ-NU-3Zf"/>
+                <constraint firstAttribute="trailing" secondItem="sSp-sN-BfA" secondAttribute="trailing" id="Y5i-BV-ljD"/>
+                <constraint firstAttribute="bottom" secondItem="MXj-rX-pfq" secondAttribute="bottom" constant="10" id="hmb-uE-8bD"/>
+                <constraint firstAttribute="bottom" secondItem="sSp-sN-BfA" secondAttribute="bottom" id="ll3-k1-KtJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-491" y="-231"/>
+        </view>
+    </objects>
+</document>

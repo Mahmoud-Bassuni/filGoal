@@ -1,0 +1,5 @@
+XSym
+0095
+2d78e07012f65a9ab3ecdb1b618e547a
+../../../FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsStateManager.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

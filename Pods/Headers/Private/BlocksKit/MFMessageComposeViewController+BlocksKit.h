@@ -1,0 +1,5 @@
+XSym
+0081
+917bebb50a9c5fff19faefc62fc17533
+../../../BlocksKit/BlocksKit/MessageUI/MFMessageComposeViewController+BlocksKit.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TeamProfileTabsViewController">
+            <connections>
+                <outlet property="buttonBarView" destination="1jw-az-Vtl" id="zaQ-3H-29B"/>
+                <outlet property="containerView" destination="f6m-NY-RYx" id="hRR-bY-ack"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6m-NY-RYx" customClass="UIScrollView">
+                    <rect key="frame" x="0.0" y="45" width="320" height="435"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-az-Vtl" customClass="XLButtonBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="GBX-kN-dWI"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Cmt-Hl-suh">
+                        <size key="itemSize" width="70" height="30"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f6m-NY-RYx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Eq-X7-yxq"/>
+                <constraint firstItem="f6m-NY-RYx" firstAttribute="top" secondItem="1jw-az-Vtl" secondAttribute="bottom" id="CMe-bd-4sB"/>
+                <constraint firstItem="1jw-az-Vtl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E6p-xb-XfI"/>
+                <constraint firstItem="1jw-az-Vtl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EA8-zr-HBn"/>
+                <constraint firstAttribute="trailing" secondItem="f6m-NY-RYx" secondAttribute="trailing" id="Fxk-UQ-V2N"/>
+                <constraint firstItem="f6m-NY-RYx" firstAttribute="top" secondItem="1jw-az-Vtl" secondAttribute="bottom" id="OSy-ap-H4t"/>
+                <constraint firstAttribute="trailing" secondItem="1jw-az-Vtl" secondAttribute="trailing" id="Wje-r7-YVs"/>
+                <constraint firstAttribute="bottom" secondItem="f6m-NY-RYx" secondAttribute="bottom" id="yqu-Ro-Ikl"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="54"/>
+        </view>
+    </objects>
+</document>

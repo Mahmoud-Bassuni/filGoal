@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingScreenViewController">
+            <connections>
+                <outlet property="backgroundImg" destination="eiO-3A-OaV" id="hGI-Js-II1"/>
+                <outlet property="homeBtn" destination="Aqz-kc-Pcw" id="WmM-Me-dhu"/>
+                <outlet property="sectionBtn" destination="FCI-si-Mqr" id="8iR-Id-g6n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1242-x2208" translatesAutoresizingMaskIntoConstraints="NO" id="eiO-3A-OaV">
+                    <rect key="frame" x="-22" y="0.0" width="342" height="568"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCI-si-Mqr">
+                    <rect key="frame" x="72" y="335" width="154" height="98"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="154" id="9ic-dJ-jvH"/>
+                        <constraint firstAttribute="height" constant="98" id="v7U-zF-3ha"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="sectionBtnPressed:" destination="-1" eventType="touchUpInside" id="1EG-Sa-5pz"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اذهب الى" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-gU-lj6">
+                    <rect key="frame" x="131" y="476" width="41" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="dWP-Ct-Xvl"/>
+                        <constraint firstAttribute="width" constant="41" id="fnb-WV-sXg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="11"/>
+                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-kc-Pcw">
+                    <rect key="frame" x="94" y="501" width="132" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="8jq-u2-4la"/>
+                        <constraint firstAttribute="height" constant="50" id="lHO-JF-p5G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="18"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="homeBtnPressed:" destination="-1" eventType="touchUpInside" id="81d-2q-T9A"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1408160031" green="0.15292501450000001" blue="0.15712770819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eiO-3A-OaV" secondAttribute="bottom" id="CDd-D8-8B4"/>
+                <constraint firstItem="Z7d-gU-lj6" firstAttribute="top" secondItem="FCI-si-Mqr" secondAttribute="bottom" constant="43" id="Dw5-9Z-1Hh"/>
+                <constraint firstItem="Aqz-kc-Pcw" firstAttribute="top" secondItem="Z7d-gU-lj6" secondAttribute="bottom" constant="8" id="FFH-8a-7so"/>
+                <constraint firstAttribute="trailing" secondItem="eiO-3A-OaV" secondAttribute="trailing" id="O1p-bt-vEz"/>
+                <constraint firstItem="Z7d-gU-lj6" firstAttribute="centerX" secondItem="Aqz-kc-Pcw" secondAttribute="centerX" constant="-8.5" id="R7e-0N-4fH"/>
+                <constraint firstItem="Aqz-kc-Pcw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RFc-Vj-649"/>
+                <constraint firstItem="FCI-si-Mqr" firstAttribute="centerX" secondItem="eiO-3A-OaV" secondAttribute="centerX" id="RLs-OR-Ek3"/>
+                <constraint firstItem="Aqz-kc-Pcw" firstAttribute="centerX" secondItem="eiO-3A-OaV" secondAttribute="centerX" constant="11" id="UYA-Xd-Z8B"/>
+                <constraint firstItem="eiO-3A-OaV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YPm-yh-vAD"/>
+                <constraint firstAttribute="bottom" secondItem="Aqz-kc-Pcw" secondAttribute="bottom" constant="17" id="bHr-kU-FzK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="52.799999999999997" y="127.736131934033"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1242-x2208" width="1242" height="2208"/>
+    </resources>
+</document>

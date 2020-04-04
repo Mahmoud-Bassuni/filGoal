@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTArabic-Medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchInfoViewController">
+            <connections>
+                <outlet property="tableView" destination="Rjd-X6-QDt" id="MkZ-9C-h1b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="548"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQi-IM-i4W">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="معلومات المباراة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtb-Lp-gPX">
+                            <rect key="frame" x="61" y="14" width="225" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="225" id="CG8-hG-chM"/>
+                                <constraint firstAttribute="height" constant="24" id="ZWA-ER-bzQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOu-je-7cz">
+                            <rect key="frame" x="8" y="15" width="32" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="FKY-FR-vC4"/>
+                                <constraint firstAttribute="height" constant="22" id="h9g-8w-ygf"/>
+                            </constraints>
+                            <state key="normal" image="cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnPressed:" destination="-1" eventType="touchUpInside" id="JXZ-f9-DKV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="wtb-Lp-gPX" firstAttribute="leading" secondItem="DOu-je-7cz" secondAttribute="trailing" constant="21" id="9mS-tS-3HK"/>
+                        <constraint firstItem="DOu-je-7cz" firstAttribute="leading" secondItem="RQi-IM-i4W" secondAttribute="leading" constant="8" id="A9e-zQ-Zzw"/>
+                        <constraint firstItem="wtb-Lp-gPX" firstAttribute="centerY" secondItem="DOu-je-7cz" secondAttribute="centerY" id="QYy-2d-rJU"/>
+                        <constraint firstAttribute="height" constant="46" id="dDS-5F-sdp"/>
+                        <constraint firstItem="DOu-je-7cz" firstAttribute="top" secondItem="RQi-IM-i4W" secondAttribute="top" constant="15" id="yr2-GP-slS"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rjd-X6-QDt">
+                    <rect key="frame" x="0.0" y="46" width="300" height="502"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ipa-3R-OEB"/>
+                        <outlet property="delegate" destination="-1" id="G8G-Jc-NaR"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RQi-IM-i4W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Do-Bi-4XV"/>
+                <constraint firstAttribute="bottom" secondItem="Rjd-X6-QDt" secondAttribute="bottom" id="9F0-0f-Nw3"/>
+                <constraint firstItem="Rjd-X6-QDt" firstAttribute="top" secondItem="RQi-IM-i4W" secondAttribute="bottom" id="SDP-iA-Sxy"/>
+                <constraint firstItem="Rjd-X6-QDt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YgF-Na-1Ug"/>
+                <constraint firstAttribute="trailing" secondItem="RQi-IM-i4W" secondAttribute="trailing" id="g0x-cU-pqR"/>
+                <constraint firstAttribute="trailing" secondItem="Rjd-X6-QDt" secondAttribute="trailing" id="jbS-ZG-wRd"/>
+                <constraint firstItem="RQi-IM-i4W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t3f-Tm-e9O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34" y="197"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="10" height="10"/>
+    </resources>
+</document>

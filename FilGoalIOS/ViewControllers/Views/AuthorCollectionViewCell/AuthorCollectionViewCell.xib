@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Next LT W23 Bold.ttf">
+            <string>DINNextLTW23-Bold</string>
+        </array>
+        <array key="DINNextLTArabic-Medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AuthorCollectionViewCell" id="gTV-IL-0wX" customClass="AuthorCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_holder" translatesAutoresizingMaskIntoConstraints="NO" id="I2y-5E-hwW">
+                        <rect key="frame" x="30" y="20" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="bPK-aZ-xEm"/>
+                            <constraint firstAttribute="width" constant="70" id="dif-pB-Rw4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أحمد عز" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ze-Kq-kWX">
+                        <rect key="frame" x="0.0" y="100" width="140" height="27"/>
+                        <fontDescription key="fontDescription" name="DINNextLTW23-Bold" family="DIN Next LT W23" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اللعب في منطقة سيميوني مرة أخرياللعب في منطقة سيميوني مرة أخري" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="17I-1S-pRN">
+                        <rect key="frame" x="2" y="132" width="136" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="lFt-BD-lbc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="13"/>
+                        <color key="textColor" red="0.34505695104598999" green="0.34512165188789368" blue="0.34505286812782288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hgW-pZ-LbD">
+                        <rect key="frame" x="55" y="45" width="20" height="20"/>
+                        <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="17I-1S-pRN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="0In-YH-c8h"/>
+                <constraint firstItem="1Ze-Kq-kWX" firstAttribute="top" secondItem="I2y-5E-hwW" secondAttribute="bottom" constant="10" id="B2b-CL-hTL"/>
+                <constraint firstAttribute="trailing" secondItem="17I-1S-pRN" secondAttribute="trailing" constant="2" id="Gqk-Jb-cEP"/>
+                <constraint firstItem="I2y-5E-hwW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="-5" id="HZG-oG-2OF"/>
+                <constraint firstItem="1Ze-Kq-kWX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LKM-zc-jtf"/>
+                <constraint firstAttribute="trailing" secondItem="1Ze-Kq-kWX" secondAttribute="trailing" id="QtF-SL-SA7"/>
+                <constraint firstItem="hgW-pZ-LbD" firstAttribute="centerY" secondItem="I2y-5E-hwW" secondAttribute="centerY" id="UFn-Xq-ZIY"/>
+                <constraint firstAttribute="bottom" secondItem="17I-1S-pRN" secondAttribute="bottom" id="aqx-fq-SFf"/>
+                <constraint firstItem="17I-1S-pRN" firstAttribute="top" secondItem="1Ze-Kq-kWX" secondAttribute="bottom" constant="5" id="dPA-D4-MNv"/>
+                <constraint firstItem="17I-1S-pRN" firstAttribute="top" secondItem="1Ze-Kq-kWX" secondAttribute="bottom" constant="5" id="eKk-gq-10S"/>
+                <constraint firstItem="I2y-5E-hwW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="k0C-8b-UDT"/>
+                <constraint firstItem="hgW-pZ-LbD" firstAttribute="centerX" secondItem="I2y-5E-hwW" secondAttribute="centerX" id="ruy-hH-C53"/>
+                <constraint firstItem="1Ze-Kq-kWX" firstAttribute="top" secondItem="I2y-5E-hwW" secondAttribute="bottom" constant="10" id="y2q-xs-emJ"/>
+            </constraints>
+            <size key="customSize" width="178" height="190"/>
+            <connections>
+                <outlet property="activityIndicator" destination="hgW-pZ-LbD" id="Ora-mH-5IH"/>
+                <outlet property="articleTitleLbl" destination="17I-1S-pRN" id="sXo-7v-p9e"/>
+                <outlet property="authorNameLbl" destination="1Ze-Kq-kWX" id="9uc-tY-Uwy"/>
+                <outlet property="imgView" destination="I2y-5E-hwW" id="tep-e1-nmH"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="173"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="place_holder" width="216" height="133"/>
+    </resources>
+</document>

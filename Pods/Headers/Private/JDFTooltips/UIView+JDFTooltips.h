@@ -1,0 +1,5 @@
+XSym
+0053
+64603ae3d1b3d2a964a21314887de04c
+../../../JDFTooltips/Pod/Classes/UIView+JDFTooltips.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

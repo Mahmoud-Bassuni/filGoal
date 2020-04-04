@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Next LT W23 Bold.ttf">
+            <string>DINNextLTW23-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AuthorCell" rowHeight="181" id="KGk-i7-Jjw" customClass="AuthorProfileHeaderViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="184.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTe-If-dTb">
+                        <rect key="frame" x="0.0" y="67" width="320" height="118"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbE-BG-dBG">
+                                <rect key="frame" x="0.0" y="51" width="320" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="53y-0K-13b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINNextLTW23-Bold" family="DIN Next LT W23" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdJ-Zf-YFt">
+                                <rect key="frame" x="189" y="87" width="37" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0 ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="DINNextLTW23Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="مقال">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="DINNextLTW23-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-GM-UUn">
+                                <rect key="frame" x="21" y="87" width="129" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="yeT-Gh-4S6"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="0 ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="DINNextLTW23Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="قرأة">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="DINNextLTW23-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reads" translatesAutoresizingMaskIntoConstraints="NO" id="I83-rp-JKX">
+                                <rect key="frame" x="163" y="92" width="14" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="HWF-uR-2yy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="Mfp-tG-iuP"/>
+                                    <constraint firstAttribute="width" constant="14" id="r3y-Dj-IXF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="14" id="rFd-l6-K5n"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artical" translatesAutoresizingMaskIntoConstraints="NO" id="CiP-4f-X2x">
+                                <rect key="frame" x="235" y="92" width="14" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="81Z-6Q-zNB"/>
+                                    <constraint firstAttribute="width" constant="14" id="HPC-1M-guy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="14" id="nCO-6U-aDx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="t3k-ux-QB1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bdJ-Zf-YFt" firstAttribute="leading" secondItem="I83-rp-JKX" secondAttribute="trailing" constant="12" id="5vf-QE-xKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="RbE-BG-dBG" secondAttribute="trailing" id="8rd-Sj-uDZ"/>
+                            <constraint firstItem="I83-rp-JKX" firstAttribute="leading" secondItem="4Rg-GM-UUn" secondAttribute="trailing" constant="13" id="Dgf-59-lev"/>
+                            <constraint firstItem="RbE-BG-dBG" firstAttribute="leading" secondItem="ZTe-If-dTb" secondAttribute="leading" id="EWU-iE-ad5"/>
+                            <constraint firstAttribute="bottom" secondItem="4Rg-GM-UUn" secondAttribute="bottom" constant="7" id="FwR-g4-Asm"/>
+                            <constraint firstItem="CiP-4f-X2x" firstAttribute="top" secondItem="RbE-BG-dBG" secondAttribute="bottom" constant="13" id="KlT-J1-krO"/>
+                            <constraint firstItem="4Rg-GM-UUn" firstAttribute="leading" secondItem="ZTe-If-dTb" secondAttribute="leading" constant="21" id="OYx-6o-mMm"/>
+                            <constraint firstItem="CiP-4f-X2x" firstAttribute="leading" secondItem="bdJ-Zf-YFt" secondAttribute="trailing" constant="9" id="Q2c-1W-XMu"/>
+                            <constraint firstItem="4Rg-GM-UUn" firstAttribute="top" secondItem="RbE-BG-dBG" secondAttribute="bottom" constant="8" id="QCe-iN-DFt"/>
+                            <constraint firstItem="I83-rp-JKX" firstAttribute="centerY" secondItem="4Rg-GM-UUn" secondAttribute="centerY" id="QEQ-pS-FIN"/>
+                            <constraint firstItem="CiP-4f-X2x" firstAttribute="centerY" secondItem="bdJ-Zf-YFt" secondAttribute="centerY" id="fGs-Pe-Qmu"/>
+                            <constraint firstItem="4Rg-GM-UUn" firstAttribute="top" secondItem="RbE-BG-dBG" secondAttribute="bottom" constant="8" id="gW3-6Q-O7P"/>
+                            <constraint firstItem="I83-rp-JKX" firstAttribute="top" secondItem="RbE-BG-dBG" secondAttribute="bottom" constant="13" id="gsO-Kg-YSQ"/>
+                            <constraint firstItem="bdJ-Zf-YFt" firstAttribute="top" secondItem="RbE-BG-dBG" secondAttribute="bottom" constant="8" id="krV-zB-6Q9"/>
+                            <constraint firstItem="bdJ-Zf-YFt" firstAttribute="top" secondItem="RbE-BG-dBG" secondAttribute="bottom" constant="8" id="n2q-hu-xST"/>
+                            <constraint firstAttribute="height" constant="118" id="yZJ-ZV-gM0"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24Z-4K-oXZ">
+                        <rect key="frame" x="115" y="22" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="5Ov-Zh-ITC"/>
+                            <constraint firstAttribute="height" constant="90" id="bmc-VX-wuH"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="79u-w9-vuG">
+                        <rect key="frame" x="150" y="57" width="20" height="20"/>
+                        <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="79u-w9-vuG" firstAttribute="centerY" secondItem="24Z-4K-oXZ" secondAttribute="centerY" id="1Zj-2e-SKi"/>
+                    <constraint firstItem="24Z-4K-oXZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FNz-az-TTR"/>
+                    <constraint firstItem="24Z-4K-oXZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="MSI-CM-pzl"/>
+                    <constraint firstAttribute="bottom" secondItem="ZTe-If-dTb" secondAttribute="bottom" id="QBH-Th-f84"/>
+                    <constraint firstItem="ZTe-If-dTb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Z6W-bO-Mv8"/>
+                    <constraint firstItem="79u-w9-vuG" firstAttribute="centerX" secondItem="24Z-4K-oXZ" secondAttribute="centerX" id="jMw-3w-ola"/>
+                    <constraint firstAttribute="trailing" secondItem="ZTe-If-dTb" secondAttribute="trailing" id="raW-gw-eBX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="activityIndicator" destination="79u-w9-vuG" id="cf4-MW-ws8"/>
+                <outlet property="authorName" destination="RbE-BG-dBG" id="Jma-Qo-GFs"/>
+                <outlet property="imgView" destination="24Z-4K-oXZ" id="tAJ-Px-afZ"/>
+                <outlet property="nOfArticalsLbl" destination="bdJ-Zf-YFt" id="LLr-r3-ZkH"/>
+                <outlet property="nOfReadsLbl" destination="4Rg-GM-UUn" id="5yj-dz-7F9"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="171.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="artical" width="13" height="15"/>
+        <image name="reads" width="18" height="14"/>
+    </resources>
+</document>

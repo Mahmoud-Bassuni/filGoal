@@ -1,0 +1,5 @@
+XSym
+0065
+443a9f2baa17107f6a37609850364119
+../../../JTCalendar/JTCalendar/Managers/JTCalendarScrollManager.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

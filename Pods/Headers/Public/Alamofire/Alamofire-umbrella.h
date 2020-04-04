@@ -1,0 +1,5 @@
+XSym
+0060
+e3ed4e95aa330b42b7f9631e555fce4c
+../../../Target Support Files/Alamofire/Alamofire-umbrella.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

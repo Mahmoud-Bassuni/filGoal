@@ -1,0 +1,5 @@
+XSym
+0067
+d4ca097351dc681ff86440bdeec58825
+../../../JTCalendar/JTCalendar/Managers/JTCalendarDelegateManager.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

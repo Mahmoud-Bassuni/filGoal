@@ -1,0 +1,5 @@
+XSym
+0063
+00ef2895b820dd6e3d59e0e65fd9288c
+../../../BlocksKit/BlocksKit/Core/NSObject+BKBlockObservation.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

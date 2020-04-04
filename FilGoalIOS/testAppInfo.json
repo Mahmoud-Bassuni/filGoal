@@ -1,0 +1,288 @@
+{
+    "timeoff": 0,
+    "adsRepeatCount": 6,
+    "adsNumOfViews": 6,
+    "isPostquareActive": 1,
+    "hMacAppKey": "LL2dz09h2qpdPKbkuggkWGJcsCvqEwMkPFzdDnUJcPU=",
+    "hMacAppId": "3c89eecfaf3241e5bbec0fe30d6ce4e3",
+    "IsSignalREnabled": false,
+    "IsBannerAdsEnabled": false,
+    "adsNewsListingFrequencey": 5,
+    "adsVideoListingFrequencey": 5,
+    "SportesEngineBaseUrl": "https://seapi.filgoal.com/",
+    "OldAPIsBaseUrl": "https://api.filgoal.com",
+    "predictBaseURL": "https://predict.filgoal.com/",
+    "isMenuChampActive": true,
+    "interstatialAdsPattern": [
+        3,
+        5,
+        8,
+        16
+    ],
+    "adsEnabledPerVersion": [
+        {
+            "version_code": "2.2.6",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "2.2.8",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "2.2.9",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.0",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.1",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.2",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.4",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.5",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.7",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.0.9",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.1.0",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.2.0",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+		{
+            "version_code": "3.3.0",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.3.1",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        },
+        {
+            "version_code": "3.3.2",
+            "isAdsEnabled": 1,
+            "isSponsorEnabled": 1,
+            "isPagerAdsEnabled": 1
+        }
+        
+    ],
+    "app": {
+        "is_active": 1,
+        "is_core": 1,
+        "version": "3.3.2",
+        "msg": "يوجد إصدار جديد من تطبيق \"فيلجول\"، ينصح بتحميل التحديث عبر App Store",
+        "store_url": "itunes.apple.com/eg/app/filgoal/id497717534?mt=8"
+    },
+    "message": {
+        "is_active": 0,
+        "msg_id": 1,
+        "is_repeated": 1,
+        "msg": "static message",
+        "msg_url": "https://staticurl.com"
+    },
+    "sponsor": {
+        "is_active": 1,
+        "imgs_base_url": "https://api.filgoal.com/mobileappresources/ios/images",
+        "section_sponsor": [],
+        "champ_sponsor": []
+    },
+    "featured_menu_item": {
+        "is_active": 0,
+        "type": 1,
+        "id": 49,
+        "title": "فى البرازيل",
+        "img_base_url": "https://api.filgoal.com/mobileappresources/ios/images/FeaturedMenuitem/WorldCup.png"
+    },
+    "tags": [
+        "أخبار الأهلي",
+        "أخبار الزمالك",
+        "أخبار الدوري المصري",
+        "أخبار أوروبا",
+        "نتائج ومواعيد المباريات",
+        "اخبار"
+    ],
+    "LandingScreen": {
+        "isActive": false,
+        "backgroundImg": "https://api.filgoal.com/MobileAppResources/iOS/ACNImages/BG.png",
+        "buttonSectionName": "",
+        "id": 78,
+        "type": 4,
+        "pageUrl": "https://www.google.com",
+        "buttonSectionImg": "https://api.filgoal.com/MobileAppResources/iOS/ACNImages/BTN12@3x.png"
+    },
+    "SpecialSection": {
+        "isActive": true,
+        "isTabActive": true,
+        "isMainHomeBannersActive": true,
+        "isHomeSectionBannersActive": true,
+        "isNewsDetailsBannersActive": false,
+        "sectionID": 78,
+        "champID": 769,
+        "bannerArtWorkImg": "https://api.filgoal.com/MobileAppResources/android/RussiaSponsorShips/Banners/banner_russia.jpg",
+        "banners": [
+            {
+                "imgUrl": "https://api.filgoal.com/MobileAppResources/android/RussiaSponsorShips/Banners/banner_EgyptianLeague_4.png",
+                "pageUrl": "http://predictandwin.filgoal.com",
+                "title": ""
+            }
+        ]
+    },
+    "serverId": 220,
+    "SSOBaseUrl": "https://sso.sarmady.net/",
+    "sponsorship": [
+        {
+            "sponsor_country_code": "EG",
+            "sponsor_path": "https://api.filgoal.com/MobileAppResources/iOS/RussiaSponsorShips/SponsorShip40/EG/",
+            "co_sponsor": {
+                "champs_ids": [867],
+                "section_ids": [90],
+                "champs_url": [
+				   {
+                       "id": 867,
+                       "url": "https://www.samsung.com/eg/smartphones/galaxy-a70-a705/SM-A705FZKUEGY/",
+                       "category": "Matches"
+                   },
+                   {
+                       "id": 867,
+                       "url": "https://www.filgoal.com/images/sponsered/hwaui-billboard-viewable.jpg",
+                       "category": "News"
+                   },
+                   {
+                       "id": 867,
+                       "url": "https://www.samsung.com/eg/smartphones/galaxy-a70-a705/SM-A705FZKUEGY/",
+                       "category": "Videos"
+                   },
+                   {
+                       "id": 867,
+                       "url": "https://www.samsung.com/eg/smartphones/galaxy-a70-a705/SM-A705FZKUEGY/",
+                       "category": "Albums"
+                   }
+				   ],
+                "sections_url": [
+				    {
+                        "id": 90,
+                        "url": "https://www.filgoal.com/images/sponsered/hwaui-billboard-viewable.jpg",
+                        "category": "Matches"
+                    },
+					 {
+                        "id": 90,
+                        "url": "https://www.filgoal.com/images/sponsered/hwaui-billboard-viewable.jpg",
+                        "category": "News"
+                    },
+                    {
+                        "id": 90,
+                        "url": "https://www.samsung.com/eg/smartphones/galaxy-a70-a705/SM-A705FZKUEGY/",
+                        "category": "Albums"
+                    },
+                    {
+                        "id": 90,
+                        "url": "https://www.samsung.com/eg/smartphones/galaxy-a70-a705/SM-A705FZKUEGY/",
+                        "category": "Videos"
+                    }
+                ]
+            },
+            "main_sponsor": {
+                "special_sponsor": {
+                    "champs_ids": [782,815,867],
+                    "section_ids": [88,44,90],
+                    "champs_url": [
+                        {
+                            "id": 782,
+                            "url": "https://www.facebook.com/SICOTech/"
+                        },
+				        {  
+                            "id":815,
+                            "url":"https://www.facebook.com/Novaldol/"
+                        },
+				       {  
+                            "id":867,
+                            "url":"https://www.facebook.com/etisalatmisr/videos/405041483434372/"
+                       }
+                    ],
+                    "sections_url": [
+                        {
+                            "id": 88,
+                            "url": "https://www.facebook.com/SICOTech/"
+                        },
+				        {  
+                           "id":44,
+                           "url":"https://www.facebook.com/Novaldol/"
+                        },
+				        {  
+                           "id":90,
+                           "url":"https://www.facebook.com/etisalatmisr/videos/405041483434372/"
+                        }
+                    ]
+                },
+                "per_content_type_sponsor": {
+                    "isNewsActive": false,
+                    "isVideosActive": false,
+                    "isAlbumsActive": false,
+                    "isMatchesActive": false,
+                    "isFreeOpinionsActive": false
+                },
+                "app_sponsor": {
+                    "isSplashActive": false,
+                    "isAppBarActive": true,
+                    "appBarUrl": "https://www.hihonor.com/eg/products/smartphone/honor20pro/?fromBanner=home_content_HONOR-20-Series"
+                },
+                "predict_sponsor": {
+                    "champs_ids": []
+                }
+            },
+            "LandingScreenWithVerticalButtons": {
+                "isActive": true,
+                "buttonSectionName": "",
+                "id": 90,
+                "type": 4,
+                "pageUrl": "https://www.filgoal.com/"
+            }
+        }
+    ]
+}

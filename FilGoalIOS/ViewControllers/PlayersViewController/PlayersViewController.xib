@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayersViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="9xe-hh-MCb" id="Fz7-Fz-5M5"/>
+                <outlet property="loadingLbl" destination="D57-Pd-pdK" id="VSI-VQ-f2I"/>
+                <outlet property="selectChampionshipBtn" destination="P9Z-Wn-Qju" id="fYO-jM-eSW"/>
+                <outlet property="tableView" destination="AKL-4T-Po8" id="GAL-5a-hvz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-4T-Po8">
+                    <rect key="frame" x="8" y="68" width="304" height="467"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aFM-4u-OEy"/>
+                        <outlet property="delegate" destination="-1" id="Yja-Im-AET"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9xe-hh-MCb">
+                    <rect key="frame" x="150" y="248" width="20" height="20"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل البيانات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D57-Pd-pdK">
+                    <rect key="frame" x="13" y="273" width="294" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="50X-a9-dWQ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="wEY-qb-EfE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9Z-Wn-Qju">
+                    <rect key="frame" x="11" y="12" width="298" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="q1l-XP-g7r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <state key="normal" title="اختر البطولة">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="championshipsBtnPressed:" destination="-1" eventType="touchUpInside" id="avs-Q4-Ehp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rix-XB-1Ut">
+                    <rect key="frame" x="26" y="24" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="C3e-Ud-ZAx"/>
+                        <constraint firstAttribute="height" constant="20" id="zuX-Zu-PHL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Comboarrow"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92919379469999996" green="0.93333435060000003" blue="0.93734973669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D57-Pd-pdK" secondAttribute="trailing" constant="13" id="2Ue-R1-nAe"/>
+                <constraint firstItem="rix-XB-1Ut" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="2Zg-QF-OF2"/>
+                <constraint firstItem="D57-Pd-pdK" firstAttribute="centerX" secondItem="9xe-hh-MCb" secondAttribute="centerX" id="94y-nS-uNG"/>
+                <constraint firstItem="AKL-4T-Po8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DCM-js-9Rv"/>
+                <constraint firstItem="P9Z-Wn-Qju" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="HXd-gY-N54"/>
+                <constraint firstItem="D57-Pd-pdK" firstAttribute="top" secondItem="9xe-hh-MCb" secondAttribute="bottom" constant="5.5" id="Lsv-KR-fYI"/>
+                <constraint firstItem="AKL-4T-Po8" firstAttribute="top" secondItem="P9Z-Wn-Qju" secondAttribute="bottom" constant="12" id="MEp-Yx-gjw"/>
+                <constraint firstItem="D57-Pd-pdK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WzN-sg-bTJ"/>
+                <constraint firstItem="P9Z-Wn-Qju" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="cdc-MW-1Lj"/>
+                <constraint firstAttribute="trailing" secondItem="AKL-4T-Po8" secondAttribute="trailing" constant="8" id="chl-2E-qru"/>
+                <constraint firstItem="AKL-4T-Po8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ci0-Rr-yfA"/>
+                <constraint firstItem="D57-Pd-pdK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="he8-CM-cO9"/>
+                <constraint firstAttribute="trailing" secondItem="P9Z-Wn-Qju" secondAttribute="trailing" constant="11" id="nbK-6C-lID"/>
+                <constraint firstItem="rix-XB-1Ut" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="p9a-bL-Wkj"/>
+                <constraint firstAttribute="bottom" secondItem="AKL-4T-Po8" secondAttribute="bottom" constant="33" id="sxb-Fs-TFv"/>
+                <constraint firstItem="AKL-4T-Po8" firstAttribute="top" secondItem="rix-XB-1Ut" secondAttribute="bottom" constant="24" id="zfq-CK-tCc"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comboarrow" width="24" height="24"/>
+    </resources>
+</document>

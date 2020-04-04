@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChampionshipAllmatchesViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="e4x-ry-aen" id="bEE-p3-FyL"/>
+                <outlet property="filterBtn" destination="s3I-Hl-6wh" id="WsB-eO-D3d"/>
+                <outlet property="filtersBtnHeightConstraint" destination="Z8v-nC-rWo" id="Aua-s4-aqF"/>
+                <outlet property="groupsDropdownArrow" destination="O7m-PG-9C6" id="xS0-0H-XhP"/>
+                <outlet property="loadingLbl" destination="xhR-S7-s4R" id="gNc-yZ-5je"/>
+                <outlet property="sponsorImg" destination="0qi-KW-7F5" id="qvm-4x-0gB"/>
+                <outlet property="sponsorImgHeightConstraint" destination="hHL-aQ-mpj" id="RTb-ww-dXJ"/>
+                <outlet property="tableView" destination="kTZ-9x-mLA" id="UI0-ak-fV7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="5" translatesAutoresizingMaskIntoConstraints="NO" id="kTZ-9x-mLA">
+                    <rect key="frame" x="11" y="94" width="298" height="377"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Jnc-xy-kgo"/>
+                        <outlet property="delegate" destination="-1" id="yCa-XC-Vn0"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="e4x-ry-aen">
+                    <rect key="frame" x="150" y="231" width="20" height="20"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل البيانات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhR-S7-s4R">
+                    <rect key="frame" x="105" y="285" width="110" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ZBz-WR-63y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3I-Hl-6wh">
+                    <rect key="frame" x="11" y="35" width="298" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Z8v-nC-rWo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="filterBtnPressed:" destination="-1" eventType="touchUpInside" id="kCh-7y-GHH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7m-PG-9C6">
+                    <rect key="frame" x="24" y="50" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1q9-Te-92G"/>
+                        <constraint firstAttribute="width" constant="23" id="BhQ-sf-vZz"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Comboarrow"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0qi-KW-7F5" customClass="TappableSponsorImageView">
+                    <rect key="frame" x="11" y="5" width="298" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="hHL-aQ-mpj"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xhR-S7-s4R" firstAttribute="centerY" secondItem="kTZ-9x-mLA" secondAttribute="centerY" constant="13" id="55m-DQ-9L3"/>
+                <constraint firstAttribute="trailing" secondItem="kTZ-9x-mLA" secondAttribute="trailing" constant="11" id="FEm-la-8c2"/>
+                <constraint firstItem="e4x-ry-aen" firstAttribute="centerX" secondItem="kTZ-9x-mLA" secondAttribute="centerX" id="GXq-j6-nkX"/>
+                <constraint firstItem="O7m-PG-9C6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="JgD-2h-dxo"/>
+                <constraint firstAttribute="trailing" secondItem="0qi-KW-7F5" secondAttribute="trailing" constant="11" id="KAc-QW-Tnm"/>
+                <constraint firstItem="xhR-S7-s4R" firstAttribute="top" secondItem="e4x-ry-aen" secondAttribute="bottom" constant="34" id="PN6-go-sui"/>
+                <constraint firstItem="0qi-KW-7F5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="Pzm-mU-m0w"/>
+                <constraint firstAttribute="trailing" secondItem="s3I-Hl-6wh" secondAttribute="trailing" constant="11" id="Qtg-ad-jjI"/>
+                <constraint firstItem="s3I-Hl-6wh" firstAttribute="top" secondItem="0qi-KW-7F5" secondAttribute="bottom" constant="5" id="SyQ-rf-4qu"/>
+                <constraint firstItem="e4x-ry-aen" firstAttribute="centerX" secondItem="xhR-S7-s4R" secondAttribute="centerX" id="WQO-7W-m5A"/>
+                <constraint firstAttribute="bottom" secondItem="kTZ-9x-mLA" secondAttribute="bottom" constant="9" id="WcL-9s-R9s"/>
+                <constraint firstItem="kTZ-9x-mLA" firstAttribute="top" secondItem="O7m-PG-9C6" secondAttribute="bottom" constant="24" id="YHg-qx-tLR"/>
+                <constraint firstItem="kTZ-9x-mLA" firstAttribute="top" secondItem="s3I-Hl-6wh" secondAttribute="bottom" constant="9" id="ZGW-Sn-1hJ"/>
+                <constraint firstItem="kTZ-9x-mLA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="l1J-0W-lto"/>
+                <constraint firstItem="0qi-KW-7F5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="qjd-54-VY4"/>
+                <constraint firstItem="s3I-Hl-6wh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="rf9-yM-byN"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comboarrow" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,5 @@
+XSym
+0067
+d5c3b94e541507d13288c25db3f57c70
+../../../MXParallaxHeader/MXParallaxHeader/MXScrollViewController.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

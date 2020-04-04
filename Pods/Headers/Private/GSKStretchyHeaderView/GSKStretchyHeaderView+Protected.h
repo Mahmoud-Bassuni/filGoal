@@ -1,0 +1,5 @@
+XSym
+0102
+ec8bd2a909c6aefd048b7678b74b3ec9
+../../../GSKStretchyHeaderView/GSKStretchyHeaderView/Classes/Private/GSKStretchyHeaderView+Protected.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

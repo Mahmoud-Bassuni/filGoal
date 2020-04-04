@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchesByWeekViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="yaW-i0-Vmq" id="3Wg-M5-H5i"/>
+                <outlet property="dropdownMenuBtn" destination="cvH-sJ-P2i" id="osA-Oa-fFX"/>
+                <outlet property="loadingLbl" destination="ihz-aE-UhR" id="uz8-pj-jXF"/>
+                <outlet property="sponsorImg" destination="Cwc-SO-ma4" id="za9-yz-DZR"/>
+                <outlet property="sponsorImgHeightConstraint" destination="0mq-Hr-PJw" id="hjg-tJ-Pca"/>
+                <outlet property="tableView" destination="hxK-O2-ROV" id="5fU-FF-dBr"/>
+                <outlet property="view" destination="6sc-p0-xRW" id="mQq-Yu-pUN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6sc-p0-xRW">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hxK-O2-ROV">
+                    <rect key="frame" x="10" y="76" width="300" height="332"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LBu-86-wDa"/>
+                        <outlet property="delegate" destination="-1" id="d1Y-PZ-c1m"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvH-sJ-P2i">
+                    <rect key="frame" x="10" y="33" width="300" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <connections>
+                        <action selector="dropdownBtnPressed:" destination="-1" eventType="touchUpInside" id="YD7-Tu-Ut1"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="yaW-i0-Vmq">
+                    <rect key="frame" x="150" y="184.5" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل البيانات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihz-aE-UhR">
+                    <rect key="frame" x="13" y="222.5" width="294" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Okm-IF-3k7"/>
+                        <constraint firstAttribute="height" constant="21" id="g85-xu-Mfj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-bc-63F">
+                    <rect key="frame" x="25" y="40" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ypN-YH-dgK"/>
+                        <constraint firstAttribute="width" constant="23" id="zjy-fU-HT6"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Comboarrow"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cwc-SO-ma4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0mq-Hr-PJw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.9410743117" green="0.94123536350000003" blue="0.94106405969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cvH-sJ-P2i" firstAttribute="leading" secondItem="6sc-p0-xRW" secondAttribute="leading" constant="10" id="1t1-l7-6dL"/>
+                <constraint firstItem="ihz-aE-UhR" firstAttribute="top" secondItem="yaW-i0-Vmq" secondAttribute="bottom" constant="18" id="2Hf-JA-QXv"/>
+                <constraint firstAttribute="trailing" secondItem="Cwc-SO-ma4" secondAttribute="trailing" id="6LH-O4-tPQ"/>
+                <constraint firstAttribute="bottom" secondItem="hxK-O2-ROV" secondAttribute="bottom" constant="8" id="7Ij-ih-So3"/>
+                <constraint firstAttribute="trailing" secondItem="ihz-aE-UhR" secondAttribute="trailing" constant="13" id="7hN-Y0-cVZ"/>
+                <constraint firstAttribute="trailing" secondItem="hxK-O2-ROV" secondAttribute="trailing" constant="10" id="9X9-wP-zVd"/>
+                <constraint firstItem="cvH-sJ-P2i" firstAttribute="top" secondItem="Cwc-SO-ma4" secondAttribute="bottom" constant="8" id="Aet-Kx-T0U"/>
+                <constraint firstAttribute="trailing" secondItem="cvH-sJ-P2i" secondAttribute="trailing" constant="10" id="LCR-Gi-n9Z"/>
+                <constraint firstItem="Cwc-SO-ma4" firstAttribute="top" secondItem="6sc-p0-xRW" secondAttribute="top" id="MOw-7Y-xJ4"/>
+                <constraint firstItem="hxK-O2-ROV" firstAttribute="leading" secondItem="6sc-p0-xRW" secondAttribute="leading" constant="10" id="Z8n-xv-bcP"/>
+                <constraint firstItem="hxK-O2-ROV" firstAttribute="top" secondItem="cvH-sJ-P2i" secondAttribute="bottom" constant="8" id="cUc-3D-9ef"/>
+                <constraint firstItem="Cwc-SO-ma4" firstAttribute="leading" secondItem="6sc-p0-xRW" secondAttribute="leading" id="dfL-vR-Ndi"/>
+                <constraint firstItem="hxK-O2-ROV" firstAttribute="top" secondItem="cvH-sJ-P2i" secondAttribute="bottom" constant="8" id="e9O-x5-hW0"/>
+                <constraint firstItem="yaW-i0-Vmq" firstAttribute="centerX" secondItem="hxK-O2-ROV" secondAttribute="centerX" id="eK2-A5-LoB"/>
+                <constraint firstItem="ZAt-bc-63F" firstAttribute="top" secondItem="Cwc-SO-ma4" secondAttribute="bottom" constant="15" id="eby-Ya-jSu"/>
+                <constraint firstItem="yaW-i0-Vmq" firstAttribute="centerY" secondItem="hxK-O2-ROV" secondAttribute="centerY" constant="-47.5" id="gHw-a5-bg5"/>
+                <constraint firstItem="ZAt-bc-63F" firstAttribute="leading" secondItem="6sc-p0-xRW" secondAttribute="leading" constant="25" id="h5v-Oq-Md0"/>
+                <constraint firstItem="ihz-aE-UhR" firstAttribute="leading" secondItem="6sc-p0-xRW" secondAttribute="leading" constant="13" id="laF-hD-6LT"/>
+                <constraint firstItem="hxK-O2-ROV" firstAttribute="top" secondItem="ZAt-bc-63F" secondAttribute="bottom" constant="16" id="tk5-Le-mw9"/>
+                <constraint firstItem="ihz-aE-UhR" firstAttribute="top" secondItem="yaW-i0-Vmq" secondAttribute="bottom" constant="18" id="uU7-9I-Hr5"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comboarrow" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,5 @@
+XSym
+0045
+328fd11b962ece1a9abc085a4f522fac
+../../../MWPhotoBrowser/Pod/Classes/MWPhoto.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

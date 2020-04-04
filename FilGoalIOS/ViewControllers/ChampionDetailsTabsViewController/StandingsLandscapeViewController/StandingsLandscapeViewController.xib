@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StandingsLandscapeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uks-mg-Cio">
+                    <rect key="frame" x="8" y="33" width="465" height="287"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="frJ-EX-CXp"/>
+                        <outlet property="delegate" destination="-1" id="aZW-Gq-7em"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9On-sj-z1W">
+                    <rect key="frame" x="0.0" y="4" width="34" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="brs-qv-neT"/>
+                        <constraint firstAttribute="height" constant="25" id="eY3-UX-XQW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" red="0.23502573369999999" green="0.2430372834" blue="0.25135019419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissBtnPressed:" destination="-1" eventType="touchUpInside" id="CTH-6R-dBZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95675891639999999" green="0.95692259069999996" blue="0.95674854519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uks-mg-Cio" firstAttribute="top" secondItem="9On-sj-z1W" secondAttribute="bottom" constant="4" id="17q-nl-nhs"/>
+                <constraint firstItem="9On-sj-z1W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4tL-ym-VQH"/>
+                <constraint firstAttribute="trailing" secondItem="uks-mg-Cio" secondAttribute="trailing" constant="7" id="eWF-JW-ESf"/>
+                <constraint firstItem="uks-mg-Cio" firstAttribute="top" secondItem="9On-sj-z1W" secondAttribute="bottom" constant="4" id="f0d-UA-0tJ"/>
+                <constraint firstItem="uks-mg-Cio" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="izi-DX-sSq"/>
+                <constraint firstAttribute="bottom" secondItem="uks-mg-Cio" secondAttribute="bottom" id="qIP-DM-hGI"/>
+                <constraint firstItem="9On-sj-z1W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="4" id="vXv-Xu-pX1"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

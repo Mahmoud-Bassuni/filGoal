@@ -1,0 +1,5 @@
+XSym
+0056
+80b20c2a4c1dbab8f84a7d8ce12daec1
+../../../MWPhotoBrowser/Pod/Classes/MWTapDetectingView.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

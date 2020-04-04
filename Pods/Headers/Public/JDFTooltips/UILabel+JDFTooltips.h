@@ -1,0 +1,5 @@
+XSym
+0054
+61d2c91771d11e9d6adc18a8884cbe2b
+../../../JDFTooltips/Pod/Classes/UILabel+JDFTooltips.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

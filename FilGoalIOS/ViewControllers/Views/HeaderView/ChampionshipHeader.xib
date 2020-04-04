@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Next LT W23 Bold.ttf">
+            <string>DINNextLTW23-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChampionshipHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="287"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="BP5-Da-U9R">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="515"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="181" id="SVc-8L-Yu4"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="SVc-8L-Yu4"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mir-XB-P73">
+                    <rect key="frame" x="104" y="122" width="112" height="112"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Li2-Xl-JyL">
+                            <rect key="frame" x="8" y="8" width="96" height="96"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="match_holder_ios" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-cT-dBN">
+                                    <rect key="frame" x="18" y="18" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="8ia-Vt-AN1"/>
+                                        <constraint firstAttribute="height" constant="60" id="Y35-Y1-yev"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="96" id="4ZD-VN-aXU"/>
+                                <constraint firstItem="fjP-cT-dBN" firstAttribute="centerX" secondItem="Li2-Xl-JyL" secondAttribute="centerX" id="EIz-Nr-vb4"/>
+                                <constraint firstItem="fjP-cT-dBN" firstAttribute="centerY" secondItem="Li2-Xl-JyL" secondAttribute="centerY" id="axN-By-6Im"/>
+                                <constraint firstAttribute="width" constant="96" id="hS8-Bs-Daq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Li2-Xl-JyL" secondAttribute="trailing" constant="8" id="6H9-ka-3z1"/>
+                        <constraint firstAttribute="bottom" secondItem="Li2-Xl-JyL" secondAttribute="bottom" constant="8" id="6na-go-oBu"/>
+                        <constraint firstItem="Li2-Xl-JyL" firstAttribute="leading" secondItem="Mir-XB-P73" secondAttribute="leadingMargin" id="GuF-KA-Jnl"/>
+                        <constraint firstAttribute="width" constant="112" id="K0m-wM-uIV"/>
+                        <constraint firstItem="Li2-Xl-JyL" firstAttribute="top" secondItem="Mir-XB-P73" secondAttribute="top" constant="8" id="U3c-dQ-b6a"/>
+                        <constraint firstItem="Li2-Xl-JyL" firstAttribute="top" secondItem="Mir-XB-P73" secondAttribute="topMargin" id="kQf-6L-tMG"/>
+                        <constraint firstItem="Li2-Xl-JyL" firstAttribute="leading" secondItem="Mir-XB-P73" secondAttribute="leading" constant="8" id="vkG-2Q-zeK"/>
+                        <constraint firstAttribute="height" constant="112" id="ymc-wI-neP"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHK-gZ-4Gh">
+                    <rect key="frame" x="8" y="242" width="304" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="9fk-ez-vbC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Bold" family="DIN Next LT W23" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsk-Kk-J8T">
+                    <rect key="frame" x="0.0" y="287" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.85882352939999995" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="A4d-fb-NJf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Dsk-Kk-J8T" firstAttribute="top" secondItem="GHK-gZ-4Gh" secondAttribute="bottom" constant="8" id="0AJ-Lc-29V"/>
+                <constraint firstItem="Mir-XB-P73" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="122" id="7oK-nM-d8n"/>
+                <constraint firstItem="Mir-XB-P73" firstAttribute="centerX" secondItem="BP5-Da-U9R" secondAttribute="centerX" id="F9K-Sz-EDc"/>
+                <constraint firstAttribute="trailing" secondItem="Dsk-Kk-J8T" secondAttribute="trailing" id="LWJ-NY-FHJ"/>
+                <constraint firstAttribute="trailing" secondItem="BP5-Da-U9R" secondAttribute="trailing" id="Nz8-qB-h99"/>
+                <constraint firstItem="GHK-gZ-4Gh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="S37-3H-Abf"/>
+                <constraint firstItem="BP5-Da-U9R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WxW-Gj-xYo"/>
+                <constraint firstItem="Dsk-Kk-J8T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="odp-0U-DtN"/>
+                <constraint firstAttribute="trailing" secondItem="GHK-gZ-4Gh" secondAttribute="trailing" constant="8" id="txL-Ed-IDn"/>
+                <constraint firstItem="GHK-gZ-4Gh" firstAttribute="top" secondItem="Mir-XB-P73" secondAttribute="bottom" constant="8" id="y7y-xO-jI5"/>
+                <constraint firstItem="BP5-Da-U9R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zVc-J7-7fb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="champImgView" destination="fjP-cT-dBN" id="mIS-Jp-Qs8"/>
+                <outlet property="championBgImgView" destination="BP5-Da-U9R" id="Xqf-ZY-IyD"/>
+                <outlet property="championshipNameLbl" destination="GHK-gZ-4Gh" id="lmv-Ci-kLb"/>
+                <outlet property="roundedView" destination="Mir-XB-P73" id="Xia-4r-loZ"/>
+                <outlet property="sponsorImgHeightConstraint" destination="SVc-8L-Yu4" id="emI-W1-s1y"/>
+                <outlet property="whiteView" destination="Li2-Xl-JyL" id="xmD-gy-842"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="393.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Default" width="1242" height="515"/>
+        <image name="match_holder_ios" width="66" height="66"/>
+    </resources>
+</document>

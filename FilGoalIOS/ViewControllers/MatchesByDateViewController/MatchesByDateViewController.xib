@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchesByDateViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="7C7-GE-f7E" id="sM4-1r-2MK"/>
+                <outlet property="dateLbl" destination="Mpr-Ul-Vfv" id="q7l-Cp-e7m"/>
+                <outlet property="dateLblHeightConstraint" destination="glF-oo-Tk8" id="csK-gn-1rk"/>
+                <outlet property="loadingLbl" destination="QpV-Wr-OYX" id="qhc-65-cUF"/>
+                <outlet property="sponsorImgHeightConstraint" destination="aJ1-ZV-BnI" id="gAM-Bg-aAX"/>
+                <outlet property="sponsorImgView" destination="nps-8F-HW2" id="6kX-ss-mOF"/>
+                <outlet property="tableView" destination="Sts-u5-4dJ" id="NOx-5U-6hG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nps-8F-HW2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="aJ1-ZV-BnI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-Ul-Vfv">
+                    <rect key="frame" x="67.5" y="25" width="185" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="185" id="1Qk-LD-u3Q"/>
+                        <constraint firstAttribute="height" constant="20" id="glF-oo-Tk8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Sts-u5-4dJ">
+                    <rect key="frame" x="15" y="61" width="290" height="399"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.92931067943572998" green="0.92946994304656982" blue="0.92930072546005249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lZr-M4-hIB"/>
+                        <outlet property="delegate" destination="-1" id="Q8g-Pi-lOz"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="7C7-GE-f7E">
+                    <rect key="frame" x="150" y="230" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل البيانات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpV-Wr-OYX">
+                    <rect key="frame" x="13" y="268" width="294" height="22.5"/>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.9410743117" green="0.94123536350000003" blue="0.94106405969999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sts-u5-4dJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="1Mt-fw-5TJ"/>
+                <constraint firstItem="7C7-GE-f7E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Dph-jl-xtx"/>
+                <constraint firstAttribute="trailing" secondItem="QpV-Wr-OYX" secondAttribute="trailing" constant="13" id="EAb-Gu-cj5"/>
+                <constraint firstItem="nps-8F-HW2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L7G-qE-JbV"/>
+                <constraint firstItem="7C7-GE-f7E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oaj-ha-VxC"/>
+                <constraint firstItem="QpV-Wr-OYX" firstAttribute="top" secondItem="7C7-GE-f7E" secondAttribute="bottom" constant="18" id="Qar-2j-gYX"/>
+                <constraint firstItem="Mpr-Ul-Vfv" firstAttribute="top" secondItem="nps-8F-HW2" secondAttribute="bottom" id="SSK-1w-kGB"/>
+                <constraint firstAttribute="bottom" secondItem="Sts-u5-4dJ" secondAttribute="bottom" constant="20" id="TsI-ve-CuZ"/>
+                <constraint firstAttribute="trailing" secondItem="nps-8F-HW2" secondAttribute="trailing" id="YQR-Ot-eX3"/>
+                <constraint firstAttribute="trailing" secondItem="Sts-u5-4dJ" secondAttribute="trailing" constant="15" id="aaP-A3-1b5"/>
+                <constraint firstItem="QpV-Wr-OYX" firstAttribute="centerX" secondItem="7C7-GE-f7E" secondAttribute="centerX" id="cHt-R6-0XW"/>
+                <constraint firstItem="nps-8F-HW2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fmO-GL-oM9"/>
+                <constraint firstItem="Sts-u5-4dJ" firstAttribute="top" secondItem="Mpr-Ul-Vfv" secondAttribute="bottom" constant="16" id="nas-ap-oAj"/>
+                <constraint firstItem="Sts-u5-4dJ" firstAttribute="top" secondItem="Mpr-Ul-Vfv" secondAttribute="bottom" constant="16" id="nn3-GH-EvO"/>
+                <constraint firstItem="QpV-Wr-OYX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="tO5-JE-3nk"/>
+                <constraint firstItem="Mpr-Ul-Vfv" firstAttribute="centerX" secondItem="Sts-u5-4dJ" secondAttribute="centerX" id="zWN-10-E0l"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="155"/>
+        </view>
+    </objects>
+</document>

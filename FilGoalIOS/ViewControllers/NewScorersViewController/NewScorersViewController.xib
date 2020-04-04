@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewScorersViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="Mbq-r2-CnP" id="GWx-HE-uiq"/>
+                <outlet property="dropDownHeightConstraint" destination="d2a-W1-T4a" id="KSa-sd-UZu"/>
+                <outlet property="dropdownBtn" destination="Isa-Ld-ww9" id="O3d-3g-vPn"/>
+                <outlet property="loadingLbl" destination="kGl-qB-oOQ" id="aAx-3t-BUW"/>
+                <outlet property="selectChampionshipBtn" destination="BdF-D0-HDS" id="4l0-hf-9gd"/>
+                <outlet property="sponsorImgViewHeightConstraint" destination="xKv-il-Rs8" id="3Uu-h6-dk1"/>
+                <outlet property="sponsorImgViewv" destination="l45-B4-oTm" id="rKK-1j-ibc"/>
+                <outlet property="tableView" destination="jWO-hm-mgn" id="n6I-L0-qgV"/>
+                <outlet property="topTableViewConstraint" destination="2JA-ji-JzO" id="xXE-fp-PgH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jWO-hm-mgn">
+                    <rect key="frame" x="10" y="97" width="300" height="426"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wHM-Ef-529"/>
+                        <outlet property="delegate" destination="-1" id="mS4-xw-fcL"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Mbq-r2-CnP">
+                    <rect key="frame" x="150" y="288" width="20" height="20"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل البيانات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGl-qB-oOQ">
+                    <rect key="frame" x="6" y="313" width="308" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="8Tf-CG-dnf"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="WVq-uS-1vY"/>
+                        <constraint firstAttribute="height" constant="21" id="f0l-jp-SCe"/>
+                        <constraint firstAttribute="width" constant="308" id="rff-dd-jRj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdF-D0-HDS">
+                    <rect key="frame" x="11" y="42" width="298" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="d2a-W1-T4a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="15"/>
+                    <state key="normal" title="اختر البطولة">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="championshipsBtnPressed:" destination="-1" eventType="touchUpInside" id="beC-15-H97"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isa-Ld-ww9">
+                    <rect key="frame" x="26" y="54" width="23" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="uUu-Mc-aLG"/>
+                        <constraint firstAttribute="width" constant="23" id="xwS-fs-kM7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Comboarrow"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l45-B4-oTm" customClass="TappableSponsorImageView">
+                    <rect key="frame" x="11" y="6" width="298" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="xKv-il-Rs8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94049555063247681" blue="0.9404836893081665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jWO-hm-mgn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="2JA-ji-JzO"/>
+                <constraint firstItem="kGl-qB-oOQ" firstAttribute="top" secondItem="Mbq-r2-CnP" secondAttribute="bottom" constant="5.5" id="6Ha-ho-1DF"/>
+                <constraint firstItem="jWO-hm-mgn" firstAttribute="top" secondItem="Isa-Ld-ww9" secondAttribute="bottom" constant="23" id="6MP-Ol-12a"/>
+                <constraint firstAttribute="bottom" secondItem="jWO-hm-mgn" secondAttribute="bottom" constant="45" id="E1R-8t-D9V"/>
+                <constraint firstItem="Isa-Ld-ww9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="54" id="EQ0-Ci-HKq"/>
+                <constraint firstItem="jWO-hm-mgn" firstAttribute="top" secondItem="BdF-D0-HDS" secondAttribute="bottom" constant="11" id="KR4-lO-15r"/>
+                <constraint firstItem="BdF-D0-HDS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="Omz-zH-kTH"/>
+                <constraint firstAttribute="trailing" secondItem="BdF-D0-HDS" secondAttribute="trailing" constant="11" id="QhM-9L-KRK"/>
+                <constraint firstItem="jWO-hm-mgn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SRu-oS-yQv"/>
+                <constraint firstItem="jWO-hm-mgn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="XAB-1E-pzG"/>
+                <constraint firstAttribute="trailing" secondItem="l45-B4-oTm" secondAttribute="trailing" constant="11" id="ZXr-GW-nnm"/>
+                <constraint firstAttribute="bottom" secondItem="jWO-hm-mgn" secondAttribute="bottom" constant="45" id="dn3-Fm-Qcb"/>
+                <constraint firstItem="kGl-qB-oOQ" firstAttribute="centerX" secondItem="Mbq-r2-CnP" secondAttribute="centerX" id="fht-Az-Tdj"/>
+                <constraint firstItem="l45-B4-oTm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="gsd-RG-yvK"/>
+                <constraint firstItem="Mbq-r2-CnP" firstAttribute="centerY" secondItem="jWO-hm-mgn" secondAttribute="centerY" constant="-12" id="ohG-Zv-iwF"/>
+                <constraint firstItem="kGl-qB-oOQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="p6R-r5-wAL"/>
+                <constraint firstItem="kGl-qB-oOQ" firstAttribute="top" secondItem="Mbq-r2-CnP" secondAttribute="bottom" constant="5" id="pKp-5Z-MlZ"/>
+                <constraint firstAttribute="trailing" secondItem="jWO-hm-mgn" secondAttribute="trailing" constant="10" id="rKd-zW-m8i"/>
+                <constraint firstAttribute="trailing" secondItem="jWO-hm-mgn" secondAttribute="trailing" constant="10" id="uWH-ka-huk"/>
+                <constraint firstItem="l45-B4-oTm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="6" id="ulp-BV-0n0"/>
+                <constraint firstItem="Isa-Ld-ww9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="xBj-5E-uLc"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comboarrow" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Next LT W23 Bold.ttf">
+            <string>DINNextLTW23-Bold</string>
+        </array>
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerStatisticsTableViewHeader"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="PlayerStatisticsTableViewHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إحصائيات اللاعب في البطولات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDH-7a-7Mf">
+                    <rect key="frame" x="8" y="5" width="296" height="31"/>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Bold" family="DIN Next LT W23" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEq-LR-1nm">
+                    <rect key="frame" x="12" y="44" width="296" height="36"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon2" translatesAutoresizingMaskIntoConstraints="NO" id="uta-rP-yS4">
+                            <rect key="frame" x="74" y="10" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="gYD-cB-Bn5"/>
+                                <constraint firstAttribute="height" constant="18" id="pT7-IB-dDp"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon4" translatesAutoresizingMaskIntoConstraints="NO" id="CzE-6S-g31">
+                            <rect key="frame" x="8" y="11" width="12" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="nvc-e4-Piu"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon3" translatesAutoresizingMaskIntoConstraints="NO" id="SPP-Vf-rk3">
+                            <rect key="frame" x="41" y="11" width="12" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="EF7-10-89M"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الفريق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgR-Uh-jXU">
+                            <rect key="frame" x="157" y="7" width="48" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="g4x-Is-6Qd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البطولة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt7-d5-7k9">
+                            <rect key="frame" x="217" y="7" width="71" height="21"/>
+                            <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="C4U-LB-mmI">
+                            <rect key="frame" x="113" y="8" width="20" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="BzR-M9-mMk"/>
+                                <constraint firstAttribute="height" constant="22" id="bLZ-gz-Mj4"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2274509804" green="0.23529411759999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Mt7-d5-7k9" firstAttribute="leading" secondItem="qgR-Uh-jXU" secondAttribute="trailing" constant="12" id="2Rr-nv-yyP"/>
+                        <constraint firstItem="qgR-Uh-jXU" firstAttribute="leading" secondItem="C4U-LB-mmI" secondAttribute="trailing" constant="24" id="4Im-WS-DAN"/>
+                        <constraint firstAttribute="bottom" secondItem="uta-rP-yS4" secondAttribute="bottom" constant="8" id="8yc-1x-Ay3"/>
+                        <constraint firstItem="SPP-Vf-rk3" firstAttribute="top" secondItem="YEq-LR-1nm" secondAttribute="top" constant="11" id="9XO-kC-b2i"/>
+                        <constraint firstItem="Mt7-d5-7k9" firstAttribute="leading" secondItem="qgR-Uh-jXU" secondAttribute="trailing" constant="12" id="BZ2-EU-jod"/>
+                        <constraint firstAttribute="bottom" secondItem="Mt7-d5-7k9" secondAttribute="bottom" constant="8" id="Bz4-8h-U4Y"/>
+                        <constraint firstItem="SPP-Vf-rk3" firstAttribute="leading" secondItem="CzE-6S-g31" secondAttribute="trailing" constant="21" id="CE0-ou-zhx"/>
+                        <constraint firstItem="uta-rP-yS4" firstAttribute="leading" secondItem="SPP-Vf-rk3" secondAttribute="trailing" constant="21" id="Kx4-wj-IZP"/>
+                        <constraint firstItem="uta-rP-yS4" firstAttribute="leading" secondItem="SPP-Vf-rk3" secondAttribute="trailing" constant="21" id="LfK-h7-DSE"/>
+                        <constraint firstAttribute="bottom" secondItem="SPP-Vf-rk3" secondAttribute="bottom" constant="10" id="N3P-Jk-v1G"/>
+                        <constraint firstAttribute="bottom" secondItem="CzE-6S-g31" secondAttribute="bottom" constant="10" id="UDh-Tr-cwO"/>
+                        <constraint firstItem="CzE-6S-g31" firstAttribute="top" secondItem="YEq-LR-1nm" secondAttribute="top" constant="11" id="Ufa-A8-lhq"/>
+                        <constraint firstItem="CzE-6S-g31" firstAttribute="leading" secondItem="YEq-LR-1nm" secondAttribute="leading" constant="8" id="Uuk-KH-Giy"/>
+                        <constraint firstItem="C4U-LB-mmI" firstAttribute="top" secondItem="YEq-LR-1nm" secondAttribute="top" constant="8" id="WL2-dM-gSZ"/>
+                        <constraint firstItem="qgR-Uh-jXU" firstAttribute="top" secondItem="YEq-LR-1nm" secondAttribute="top" constant="7" id="bol-Jb-z4q"/>
+                        <constraint firstItem="uta-rP-yS4" firstAttribute="top" secondItem="YEq-LR-1nm" secondAttribute="top" constant="10" id="cqf-Uk-XtJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Mt7-d5-7k9" secondAttribute="trailing" constant="8" id="cqo-Hw-LWz"/>
+                        <constraint firstItem="C4U-LB-mmI" firstAttribute="leading" secondItem="uta-rP-yS4" secondAttribute="trailing" constant="21" id="dcT-43-8cT"/>
+                        <constraint firstAttribute="bottom" secondItem="qgR-Uh-jXU" secondAttribute="bottom" constant="8" id="dob-9s-ZOJ"/>
+                        <constraint firstAttribute="bottom" secondItem="C4U-LB-mmI" secondAttribute="bottom" constant="6" id="hqM-du-a2f"/>
+                        <constraint firstAttribute="height" constant="36" id="pFg-Ez-Tom"/>
+                        <constraint firstItem="SPP-Vf-rk3" firstAttribute="leading" secondItem="CzE-6S-g31" secondAttribute="trailing" constant="21" id="qD8-6P-r8U"/>
+                        <constraint firstItem="Mt7-d5-7k9" firstAttribute="top" secondItem="YEq-LR-1nm" secondAttribute="top" constant="7" id="wUJ-LV-1Ou"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YEq-LR-1nm" firstAttribute="top" secondItem="eDH-7a-7Mf" secondAttribute="bottom" constant="8" id="LTv-Vz-nJv"/>
+                <constraint firstItem="YEq-LR-1nm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="OmH-0v-Wqz"/>
+                <constraint firstAttribute="bottom" secondItem="YEq-LR-1nm" secondAttribute="bottom" constant="6" id="QAl-Gh-VmG"/>
+                <constraint firstAttribute="trailing" secondItem="eDH-7a-7Mf" secondAttribute="trailing" constant="16" id="QZy-P0-OG2"/>
+                <constraint firstItem="eDH-7a-7Mf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="Wy8-NW-iTc"/>
+                <constraint firstAttribute="trailing" secondItem="YEq-LR-1nm" secondAttribute="trailing" constant="12" id="XNb-hz-IKg"/>
+                <constraint firstItem="eDH-7a-7Mf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hMt-61-CEu"/>
+                <constraint firstItem="YEq-LR-1nm" firstAttribute="top" secondItem="eDH-7a-7Mf" secondAttribute="bottom" constant="8" id="m8f-7Y-Sx2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerView" destination="YEq-LR-1nm" id="f2p-wY-Vh4"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="-150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon1" width="20" height="22"/>
+        <image name="icon2" width="18" height="18"/>
+        <image name="icon3" width="12" height="15"/>
+        <image name="icon4" width="12" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

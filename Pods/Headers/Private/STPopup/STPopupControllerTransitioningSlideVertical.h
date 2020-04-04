@@ -1,0 +1,5 @@
+XSym
+0070
+00d9794588a929d17e6e35743913d472
+../../../STPopup/STPopup/STPopupControllerTransitioningSlideVertical.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

@@ -1,0 +1,5 @@
+XSym
+0060
+765eb6763476796181fbd635e49c74ed
+../../../JTCalendar/JTCalendar/Protocols/JTCalendarWeekDay.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

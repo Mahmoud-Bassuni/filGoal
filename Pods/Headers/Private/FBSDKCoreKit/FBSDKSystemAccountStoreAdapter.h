@@ -1,0 +1,5 @@
+XSym
+0089
+7ea65bfb13d90973da40b29ea15f9230
+../../../FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSystemAccountStoreAdapter.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

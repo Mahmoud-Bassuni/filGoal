@@ -1,0 +1,45 @@
+========================================================================================
+This Docs Started With Mahmoud to whoever follows Mahmoud -> ..Add.Your.Name.Here.. ->
+==============================================================================================================
+Adding the new sponsor banner under the navigation bar
+--------------------------------------------------------
+- we added a function inside parenViewController which its function is to pass the wholeView of the viewcontroller self.view and it will find the view which is constrained to the top of the view and then it will insert herOwnView between them and we will reconstruct the constraint so it stays in the middle and be the new top constrainted view
+- this function is called inside the viewDidAppear of parentViewController but first check if the self.parentViewController is navigationController type (to make sure that this viewcontroller isn't embded inside another viewcontroller) and in some cases its called from inside the ViewController viewDidAppear
+- In rare occasions we copied and pasted the solution on that viewcontroller, this happened only on the viewcontrollers which inherits from viewcontroller other than ParentViewController so we didn't have any other choice, example for these viewcontrollers WeekMatchesViewController which inherites from GAITrackedViewController which is a pod
+- in the viewcontrollers that have parallaxHeader view we will have to:
+0- all of that edits will be marked with comment "//SMGL New Banner"
+1- change where that parallox appear change it from CGPointZero to certain point/pixel .....
+2- when we was shrinking the parallox header it was :- change the naivgationbar background image... but now we will have to change that image into the parallox header itself.... so we can leave the navigationbar clean without any sponsors with the normal filgoal image
+3- decrease size of the scrollview/tableview because it was going under the tabbar
+
+we made it clickable by:
+1-adding gesture on the uiimageview that will call a function that will check if the (self.champs_id, self.section_id, self.activeCategory) and as so it will grap the url and then open it at the end
+2- we pass the (self.champs_id, self.section_id, self.activeCategory) from the sub viewcontroller with calling the methods like
+{{
+
+-(void)setNavigationBarBackgroundImage:(NSString*)mainSponsorUrl champs_id:(NSInteger)champs_id section_id:(NSInteger)section_id activeCategory:(NSString*)activeCategory
+-(void)setNavigationBarBackgroundFromChildViewControllerImageStr:(NSString*)mainSponsorUrl champs_id:(NSInteger)champs_id section_id:(NSInteger)section_id activeCategory:(NSString*)activeCategory
+
+}}
+==============================================================================================================
+Making CoSponsor Clickable we:
+------------------------------
+1- create the UIImageView subview called TappableSponsorImageView that we add tapGesture into it and property for the clickable url
+2- created two static functions inside AppSponsors that will return the url for section and champion and we call these functions when we check if section and champion were active and get the cosponsor image url in this place we set the coSponsor clickable url
+==============================================================================================================
+Sponsor Images Urls:
+---------------------
+THe Main URl: https://api.filgoal.com/MobileAppResources/iOS/RussiaSponsorShips/SponsorShip18/EG/mainSponsor/appSponsor/AppNavigationBar/----.png
+Then Add These For each phone inplace "----.png"
+1- iPhone (SE, 5S, 5) Image
+640@2x.png
+2- iPhone (6) Image
+750@2x.png
+3- iPhone (X, XS max) Image
+1125@3x.png
+4- iPhone (XR) Image
+750@2x.png
+5- iPhone (6 Plus, ) Image
+1242@3x.png
+==============================================================================================================
+

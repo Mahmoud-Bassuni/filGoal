@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+  function myfunction() {
+    var nid = "151";         /* update with network id */
+    var aid = "filgoal-001";  /* update with ad slot id */
+    var region = "me";     /* update with country or region id */
+    var proto = ("https:" == document.location.protocol ? "https:" : "http:");
+    var img = new Image(1,1);
+    img.src = proto + "//" + region + ".effectivemeasure.net/emnb_" + nid + "_" + aid + ".gif?_em_nmb=" + (new Date()).getTime();
+  }
+
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myfunction()">Try it</button>
+
+</body>
+</html>

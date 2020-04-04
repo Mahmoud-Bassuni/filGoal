@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTArabic-Medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="confirmPasswordTxt" destination="yye-hx-sfq" id="DJ1-F8-HmQ"/>
+                <outlet property="emailTxt" destination="ZHz-Lu-IFZ" id="ebs-xO-eql"/>
+                <outlet property="genderSegmentControl" destination="sFV-ew-dpN" id="lO4-XA-Zsx"/>
+                <outlet property="passwordTxt" destination="Cxd-EU-dab" id="jQK-Am-v6Y"/>
+                <outlet property="scrollView" destination="fgq-Wn-wbh" id="ROl-jc-HGg"/>
+                <outlet property="view" destination="Xxm-tR-R6Z" id="p4p-MV-cKw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Xxm-tR-R6Z">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgq-Wn-wbh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="du3-i8-Uhs">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-Zs-n3c">
+                            <rect key="frame" x="31" y="179.5" width="258" height="279"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="انشاء حساب جديد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAp-dI-By0">
+                                    <rect key="frame" x="69" y="13" width="120" height="19"/>
+                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZHz-Lu-IFZ">
+                                    <rect key="frame" x="13" y="42" width="233" height="40"/>
+                                    <color key="backgroundColor" red="0.69796198610000004" green="0.69808381799999997" blue="0.69795435669999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="B75-Ts-XGk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="2JO-Zf-snP"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Cxd-EU-dab">
+                                    <rect key="frame" x="13" y="95" width="233" height="40"/>
+                                    <color key="backgroundColor" red="0.69796198610000004" green="0.69808381799999997" blue="0.69795435669999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="3mf-xk-c95"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="zZ2-1j-PwT"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="تأكيد كلمة المرور" textAlignment="right" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="yye-hx-sfq">
+                                    <rect key="frame" x="13" y="146" width="233" height="40"/>
+                                    <color key="backgroundColor" red="0.69796198610000004" green="0.69808381799999997" blue="0.69795435669999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="7ib-fO-ypW"/>
+                                        <constraint firstAttribute="height" constant="40" id="hRh-Wh-Axu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="PCx-V1-5Y4"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bos-v1-6C1">
+                                    <rect key="frame" x="12" y="231" width="234" height="40"/>
+                                    <color key="backgroundColor" red="0.93211865429999996" green="0.63484501839999996" blue="0.022336157039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="9Yi-NP-h5o"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="15"/>
+                                    <state key="normal" title="انشاء حساب ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="registerUserBtnPressed:" destination="-1" eventType="touchUpInside" id="db7-0l-dbT"/>
+                                    </connections>
+                                </button>
+                                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sFV-ew-dpN">
+                                    <rect key="frame" x="13" y="194" width="121" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="FcU-9u-fiP"/>
+                                        <constraint firstAttribute="width" constant="121" id="uIa-6x-6Wz"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="ذكر "/>
+                                        <segment title="أنثي"/>
+                                    </segments>
+                                    <color key="tintColor" red="0.0078412042930722237" green="0.0078442497178912163" blue="0.0078410133719444275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="genderSegmentValueChanged:" destination="-1" eventType="valueChanged" id="jV2-ol-SUd"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.3035626636" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="yye-hx-sfq" firstAttribute="leading" secondItem="oA3-Zs-n3c" secondAttribute="leading" constant="13" id="1jr-bL-XKq"/>
+                                <constraint firstItem="bos-v1-6C1" firstAttribute="top" secondItem="sFV-ew-dpN" secondAttribute="bottom" constant="9" id="9LZ-5I-vgF"/>
+                                <constraint firstItem="VAp-dI-By0" firstAttribute="top" secondItem="oA3-Zs-n3c" secondAttribute="top" constant="13" id="Acg-AO-qho"/>
+                                <constraint firstAttribute="bottom" secondItem="bos-v1-6C1" secondAttribute="bottom" constant="8" id="BU8-UR-TIq"/>
+                                <constraint firstItem="ZHz-Lu-IFZ" firstAttribute="leading" secondItem="oA3-Zs-n3c" secondAttribute="leading" constant="13" id="CCg-Jl-WUl"/>
+                                <constraint firstItem="sFV-ew-dpN" firstAttribute="leading" secondItem="oA3-Zs-n3c" secondAttribute="leading" constant="13" id="DaL-bO-Zrg"/>
+                                <constraint firstAttribute="trailing" secondItem="yye-hx-sfq" secondAttribute="trailing" constant="12" id="Fnd-Bp-jbm"/>
+                                <constraint firstItem="sFV-ew-dpN" firstAttribute="top" secondItem="yye-hx-sfq" secondAttribute="bottom" constant="8" id="GO7-If-aL1"/>
+                                <constraint firstAttribute="trailing" secondItem="bos-v1-6C1" secondAttribute="trailing" constant="12" id="Gin-vZ-WEH"/>
+                                <constraint firstItem="bos-v1-6C1" firstAttribute="centerX" secondItem="oA3-Zs-n3c" secondAttribute="centerX" id="VUP-3D-wEA"/>
+                                <constraint firstItem="Cxd-EU-dab" firstAttribute="top" secondItem="ZHz-Lu-IFZ" secondAttribute="bottom" constant="13" id="WMM-s2-HJh"/>
+                                <constraint firstItem="Cxd-EU-dab" firstAttribute="leading" secondItem="oA3-Zs-n3c" secondAttribute="leading" constant="13" id="Ztv-He-aIU"/>
+                                <constraint firstItem="ZHz-Lu-IFZ" firstAttribute="top" secondItem="VAp-dI-By0" secondAttribute="bottom" constant="10" id="dHO-lU-Eis"/>
+                                <constraint firstItem="VAp-dI-By0" firstAttribute="centerX" secondItem="oA3-Zs-n3c" secondAttribute="centerX" id="haI-lK-CYr"/>
+                                <constraint firstAttribute="trailing" secondItem="VAp-dI-By0" secondAttribute="trailing" constant="69" id="i8b-F6-AF6"/>
+                                <constraint firstAttribute="trailing" secondItem="Cxd-EU-dab" secondAttribute="trailing" constant="12" id="mjE-ap-ovQ"/>
+                                <constraint firstAttribute="trailing" secondItem="ZHz-Lu-IFZ" secondAttribute="trailing" constant="12" id="peA-f4-sKb"/>
+                                <constraint firstItem="yye-hx-sfq" firstAttribute="top" secondItem="Cxd-EU-dab" secondAttribute="bottom" constant="11" id="tTw-6H-JMY"/>
+                                <constraint firstItem="VAp-dI-By0" firstAttribute="leading" secondItem="oA3-Zs-n3c" secondAttribute="leading" constant="69" id="wAQ-iS-CIK"/>
+                                <constraint firstItem="sFV-ew-dpN" firstAttribute="top" secondItem="yye-hx-sfq" secondAttribute="bottom" constant="8" id="znE-4P-mVz"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="m38-ul-WXD">
+                            <rect key="frame" x="63" y="109.5" width="194" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="OGv-6v-htH"/>
+                                <constraint firstAttribute="width" constant="194" id="gdH-GO-TAA"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="top" secondItem="fgq-Wn-wbh" secondAttribute="top" id="112-u5-1aa"/>
+                        <constraint firstAttribute="trailing" secondItem="du3-i8-Uhs" secondAttribute="trailing" id="54p-9z-AzI"/>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="leading" secondItem="fgq-Wn-wbh" secondAttribute="leading" id="9DY-SC-x7T"/>
+                        <constraint firstItem="oA3-Zs-n3c" firstAttribute="centerX" secondItem="du3-i8-Uhs" secondAttribute="centerX" id="9Vs-hZ-Ngm"/>
+                        <constraint firstItem="oA3-Zs-n3c" firstAttribute="centerY" secondItem="du3-i8-Uhs" secondAttribute="centerY" constant="35" id="IwO-D1-5aq"/>
+                        <constraint firstAttribute="bottom" secondItem="du3-i8-Uhs" secondAttribute="bottom" id="Jna-wY-pgV"/>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="leading" secondItem="fgq-Wn-wbh" secondAttribute="leading" id="P3L-hb-qBu"/>
+                        <constraint firstAttribute="bottom" secondItem="du3-i8-Uhs" secondAttribute="bottom" id="TxJ-VJ-yIx"/>
+                        <constraint firstItem="oA3-Zs-n3c" firstAttribute="leading" secondItem="fgq-Wn-wbh" secondAttribute="leading" constant="31" id="YpD-iz-0Io"/>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="top" secondItem="fgq-Wn-wbh" secondAttribute="top" id="cwJ-Vp-nhU"/>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="centerY" secondItem="fgq-Wn-wbh" secondAttribute="centerY" id="lO6-po-SAg"/>
+                        <constraint firstItem="oA3-Zs-n3c" firstAttribute="top" secondItem="m38-ul-WXD" secondAttribute="bottom" constant="21" id="ncB-oy-U4r"/>
+                        <constraint firstAttribute="trailing" secondItem="du3-i8-Uhs" secondAttribute="trailing" id="trz-8d-WSV"/>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="centerX" secondItem="fgq-Wn-wbh" secondAttribute="centerX" id="xfF-kt-pPR"/>
+                        <constraint firstItem="du3-i8-Uhs" firstAttribute="centerX" secondItem="m38-ul-WXD" secondAttribute="centerX" id="y3J-wL-A9D"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fgq-Wn-wbh" secondAttribute="bottom" id="23a-5Z-1IJ"/>
+                <constraint firstItem="fgq-Wn-wbh" firstAttribute="leading" secondItem="Xxm-tR-R6Z" secondAttribute="leading" id="9Ym-gm-LUv"/>
+                <constraint firstItem="fgq-Wn-wbh" firstAttribute="top" secondItem="Xxm-tR-R6Z" secondAttribute="top" id="Dau-Zh-FwB"/>
+                <constraint firstAttribute="trailing" secondItem="fgq-Wn-wbh" secondAttribute="trailing" id="VVQ-jM-Nsy"/>
+                <constraint firstItem="du3-i8-Uhs" firstAttribute="width" secondItem="Xxm-tR-R6Z" secondAttribute="width" id="bu4-oZ-wF5"/>
+                <constraint firstItem="fgq-Wn-wbh" firstAttribute="width" secondItem="Xxm-tR-R6Z" secondAttribute="width" id="fCE-AG-zhg"/>
+            </constraints>
+            <point key="canvasLocation" x="86" y="160"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="414" height="736"/>
+        <image name="logo" width="194" height="49"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController">
+            <connections>
+                <outlet property="calendarContentView" destination="qub-th-Hn5" id="h3u-5g-W8r"/>
+                <outlet property="calendarMenuView" destination="exe-cI-gEd" id="HTZ-AP-Hfg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="418"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exe-cI-gEd" customClass="JTCalendarMenuView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="8Tc-6r-1fy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qub-th-Hn5" customClass="JTVerticalCalendarView">
+                    <rect key="frame" x="0.0" y="52" width="320" height="330"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="330" id="5U4-Ae-KeV"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="Mr4-nQ-5rs">
+                    <rect key="frame" x="286" y="390" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="1fr-by-6Cq"/>
+                        <constraint firstAttribute="height" constant="20" id="pjt-4f-lQ3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يوجد مباريات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BT6-zJ-GKI">
+                    <rect key="frame" x="220.5" y="389" width="57.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6tc-8W-I4k"/>
+                        <constraint firstAttribute="width" constant="57.5" id="Wso-ab-S6G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mr4-nQ-5rs" firstAttribute="leading" secondItem="BT6-zJ-GKI" secondAttribute="trailing" constant="8" id="E3b-mX-W9m"/>
+                <constraint firstItem="Mr4-nQ-5rs" firstAttribute="top" secondItem="qub-th-Hn5" secondAttribute="bottom" constant="8" id="JbG-Mk-e4Q"/>
+                <constraint firstItem="qub-th-Hn5" firstAttribute="top" secondItem="exe-cI-gEd" secondAttribute="bottom" constant="1" id="QOc-lZ-3lr"/>
+                <constraint firstItem="exe-cI-gEd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RSR-eH-zh1"/>
+                <constraint firstAttribute="trailing" secondItem="qub-th-Hn5" secondAttribute="trailing" id="Y6g-Cz-2uu"/>
+                <constraint firstItem="BT6-zJ-GKI" firstAttribute="top" secondItem="qub-th-Hn5" secondAttribute="bottom" constant="7" id="ZTl-RX-UzT"/>
+                <constraint firstItem="qub-th-Hn5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bhF-0W-fTf"/>
+                <constraint firstItem="exe-cI-gEd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="diG-Q7-T6Q"/>
+                <constraint firstAttribute="bottom" secondItem="Mr4-nQ-5rs" secondAttribute="bottom" constant="8" id="lfF-do-7r5"/>
+                <constraint firstItem="Mr4-nQ-5rs" firstAttribute="leading" secondItem="BT6-zJ-GKI" secondAttribute="trailing" constant="8" id="uKp-8P-Ui5"/>
+                <constraint firstAttribute="trailing" secondItem="exe-cI-gEd" secondAttribute="trailing" id="vGV-g5-E42"/>
+                <constraint firstAttribute="trailing" secondItem="Mr4-nQ-5rs" secondAttribute="trailing" constant="14" id="w9v-Vj-XI6"/>
+                <constraint firstAttribute="bottom" secondItem="BT6-zJ-GKI" secondAttribute="bottom" constant="8" id="zvw-t6-eAe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="102" y="-21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ball" width="22" height="22"/>
+    </resources>
+</document>

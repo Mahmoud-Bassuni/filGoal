@@ -1,0 +1,5 @@
+XSym
+0051
+d24b9c44e6caa32e2385444b3357e9f2
+../../../JTCalendar/JTCalendar/JTCalendarSettings.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

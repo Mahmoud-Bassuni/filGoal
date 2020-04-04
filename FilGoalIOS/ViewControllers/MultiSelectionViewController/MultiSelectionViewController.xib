@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTArabic-Medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultiSelectionViewController">
+            <connections>
+                <outlet property="doneBtn" destination="SRq-gB-vTh" id="Nai-i5-0Dy"/>
+                <outlet property="tableView" destination="OkL-Vg-hNL" id="cBb-A4-L9z"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0C6-tA-lqn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OkL-Vg-hNL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="B7X-Dy-clJ"/>
+                        <outlet property="delegate" destination="-1" id="SOU-Br-RvF"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRq-gB-vTh">
+                    <rect key="frame" x="67" y="205" width="187" height="39"/>
+                    <color key="backgroundColor" red="0.93211865429999996" green="0.63484501839999996" blue="0.022336157039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="18"/>
+                    <state key="normal" title="تم">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="SbK-1Q-L9q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SRq-gB-vTh" firstAttribute="top" secondItem="OkL-Vg-hNL" secondAttribute="bottom" constant="8" id="2ii-5w-5e0"/>
+                <constraint firstItem="OkL-Vg-hNL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Xa-qs-EIH"/>
+                <constraint firstItem="SRq-gB-vTh" firstAttribute="centerX" secondItem="OkL-Vg-hNL" secondAttribute="centerX" id="6mM-Jh-3Yv"/>
+                <constraint firstAttribute="trailing" secondItem="SRq-gB-vTh" secondAttribute="trailing" constant="66" id="7dN-Sq-9Cj"/>
+                <constraint firstItem="OkL-Vg-hNL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D4M-uh-oQ1"/>
+                <constraint firstItem="SRq-gB-vTh" firstAttribute="top" secondItem="OkL-Vg-hNL" secondAttribute="bottom" constant="8" id="Nsd-5b-0ln"/>
+                <constraint firstAttribute="trailing" secondItem="OkL-Vg-hNL" secondAttribute="trailing" id="P5I-Oj-Tay"/>
+                <constraint firstItem="SRq-gB-vTh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="67" id="b0k-pd-ihH"/>
+                <constraint firstAttribute="bottom" secondItem="SRq-gB-vTh" secondAttribute="bottom" constant="6" id="zzf-f3-DwF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

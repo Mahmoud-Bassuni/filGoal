@@ -1,0 +1,267 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - BSKeyboardControls (2.2)
+  - CCBottomRefreshControl (0.5.2)
+  - CSStickyHeaderFlowLayout (0.2.11)
+  - DACircularProgress (2.3.1)
+  - FBSDKCoreKit (4.36.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.36.0):
+    - FBSDKCoreKit
+  - Firebase/AppIndexing (3.17.0):
+    - Firebase/Core
+    - FirebaseAppIndexing (= 1.2.0)
+  - Firebase/Core (3.17.0):
+    - FirebaseAnalytics (= 3.9.0)
+    - FirebaseCore (= 3.6.0)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseAppIndexing (1.2.0)
+  - FirebaseCore (3.6.0):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google-Mobile-Ads-SDK (7.52.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.1.6):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleMobileAdsMediationInMobi (7.0.4.0):
+    - Google-Mobile-Ads-SDK (>= 7.14.0)
+    - InMobiSDK (= 7.0.4)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.3.2)
+  - GoogleUtilities/Logger (6.3.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.3.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.3.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.3.2)"
+  - GoogleUtilities/Reachability (6.3.2):
+    - GoogleUtilities/Logger
+  - GSKStretchyHeaderView (1.0.4)
+  - HMSegmentedControl (1.5.4)
+  - InMobiSDK (7.0.4)
+  - Instabug (7.8):
+    - Instabug/Instabug (= 7.8)
+    - Instabug/InstabugCore (= 7.8)
+  - Instabug/Instabug (7.8):
+    - Instabug/InstabugCore
+  - Instabug/InstabugCore (7.8)
+  - JDFTooltips (1.1)
+  - JTCalendar (2.2.1)
+  - LGPlusButtonsView (1.1.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - "SDWebImage (!= 3.7.2, ~> 3.7)"
+  - MXPagerView (0.1.4)
+  - MXParallaxHeader (0.6.1)
+  - MXSegmentedPager (3.2.1):
+    - HMSegmentedControl (~> 1.5.3)
+    - MXPagerView (~> 0.1.4)
+    - MXParallaxHeader (~> 0.6.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - Netmera (3.4.20)
+  - Result (4.1.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - STPopup (1.8.3)
+  - TeadsSDK (2.7.15)
+  - TLYShyNavBar (1.1.1)
+  - Toast (4.0.0)
+  - XCDYouTubeKit (2.5.6)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - AFNetworking
+  - AFNetworking (~> 3.0)
+  - BlocksKit (~> 2.2)
+  - Bolts
+  - BSKeyboardControls (~> 2.2)
+  - CCBottomRefreshControl
+  - CSStickyHeaderFlowLayout
+  - FBSDKCoreKit (~> 4.36.0)
+  - FBSDKLoginKit (~> 4.36.0)
+  - Firebase/AppIndexing
+  - Firebase/Core
+  - Google-Mobile-Ads-SDK
+  - GoogleMobileAdsMediationInMobi
+  - GSKStretchyHeaderView
+  - HMSegmentedControl
+  - Instabug
+  - JDFTooltips
+  - JTCalendar (~> 2.0)
+  - LGPlusButtonsView (~> 1.1.0)
+  - Masonry
+  - Moya
+  - MWPhotoBrowser
+  - MXParallaxHeader
+  - MXSegmentedPager
+  - Netmera
+  - STPopup
+  - TeadsSDK
+  - TLYShyNavBar
+  - Toast (~> 4.0.0)
+  - XCDYouTubeKit (~> 2.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - BlocksKit
+    - Bolts
+    - BSKeyboardControls
+    - CCBottomRefreshControl
+    - CSStickyHeaderFlowLayout
+    - DACircularProgress
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAppIndexing
+    - FirebaseCore
+    - FirebaseInstanceID
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleMobileAdsMediationInMobi
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GSKStretchyHeaderView
+    - HMSegmentedControl
+    - InMobiSDK
+    - Instabug
+    - JDFTooltips
+    - JTCalendar
+    - LGPlusButtonsView
+    - Masonry
+    - MBProgressHUD
+    - MWPhotoBrowser
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedPager
+    - nanopb
+    - Netmera
+    - SDWebImage
+    - STPopup
+    - TeadsSDK
+    - TLYShyNavBar
+    - Toast
+    - XCDYouTubeKit
+  trunk:
+    - Alamofire
+    - Moya
+    - Result
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  BSKeyboardControls: b701935e789961102e3f20063bba7185800a2d3f
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  CSStickyHeaderFlowLayout: e9bcb1762413f49d7d09e5bd0ae5efd1100116b7
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FBSDKCoreKit: 3b8e6570eedb443f9fc4af196a7bf39f18e3a3d8
+  FBSDKLoginKit: 8bccb6064708ab2f4251a7fc4e3b6d8d00ad91ba
+  Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseAppIndexing: adf2f3b14b6828f1d4c539fc72434962cf29ea2c
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
+  GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
+  GoogleMobileAdsMediationInMobi: e6637ed7e1fdac6d2c7c1c2ec8a260252bdbc664
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
+  GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
+  HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
+  InMobiSDK: 71c77f9f07260fe6d7cabf789d071e50007c7546
+  Instabug: 51b8f0502289c3ec3e2e66672a988d3fe6ab563a
+  JDFTooltips: 72a825bdd8a323fb035d5a57c13e1298f5a8e256
+  JTCalendar: be9e781229c6e539d9b71267560410886cd65cfb
+  LGPlusButtonsView: 57878cd3d461d0ee2042f5b7b25d1c017e22a084
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  MXPagerView: 8798126c2e629695474eb16cbe1a6da6e0b02915
+  MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  MXSegmentedPager: 6b6a9fc77887e6fdb09a940f37827466e6d677c8
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Netmera: 16cfaa624ff07b2abc31b562b9d0a71576e1b22e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  STPopup: da1167250a01584af7bcccb898653185f223ec46
+  TeadsSDK: 854ba39ea9eab435668b17c5b93bc443ccf0c4b5
+  TLYShyNavBar: d200e598923fbc2bd21a5c5efdfabf4898b11da0
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
+
+PODFILE CHECKSUM: 97665b2b3de41b5c013b623fda26fac0c98e6a9a
+
+COCOAPODS: 1.8.4

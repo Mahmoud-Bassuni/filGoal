@@ -1,0 +1,5 @@
+XSym
+0084
+7d4963b60d67ee90bfcdea5b6c9ec9bf
+../../../GSKStretchyHeaderView/GSKStretchyHeaderView/Classes/GSKStretchyHeaderView.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

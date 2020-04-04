@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsHomeVC" customModule="FilGoalIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="indLoader" destination="Mkf-jI-gy1" id="1aT-CM-11b"/>
+                <outlet property="loadingLabel" destination="ZEk-sj-tiy" id="S1l-dG-4v0"/>
+                <outlet property="searchBar" destination="A0G-pZ-e0e" id="bc2-YO-sRR"/>
+                <outlet property="tableView" destination="Sdj-Te-BN2" id="RPA-Ed-Wg5"/>
+                <outlet property="view" destination="Jc0-kg-efe" id="opy-2O-iJK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Jc0-kg-efe">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="205" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-Te-BN2">
+                    <rect key="frame" x="0.0" y="34" width="414" height="779"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="بحث في الأخبار" id="A0G-pZ-e0e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-jI-gy1">
+                    <rect key="frame" x="197" y="413.5" width="20" height="20"/>
+                    <color key="color" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل الأخبار" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-sj-tiy">
+                    <rect key="frame" x="0.0" y="441.5" width="414" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fu8-cb-Afg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-Yn-gFe" customClass="TappableSponsorImageView">
+                    <rect key="frame" x="12" y="4" width="390" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="mmV-JL-Mn1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.92779213189999998" green="0.92781382800000001" blue="0.92780214549999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZEk-sj-tiy" firstAttribute="top" secondItem="Mkf-jI-gy1" secondAttribute="bottom" constant="8" id="28u-1H-irq"/>
+                <constraint firstItem="YSZ-Yn-gFe" firstAttribute="width" secondItem="Sdj-Te-BN2" secondAttribute="width" constant="-24" id="8sc-aP-No4"/>
+                <constraint firstAttribute="trailing" secondItem="Sdj-Te-BN2" secondAttribute="trailing" id="CCY-pn-B2u"/>
+                <constraint firstItem="Mkf-jI-gy1" firstAttribute="centerY" secondItem="Sdj-Te-BN2" secondAttribute="centerY" id="E8j-IT-7ZY"/>
+                <constraint firstItem="YSZ-Yn-gFe" firstAttribute="top" secondItem="Jc0-kg-efe" secondAttribute="top" constant="4" id="QE3-Zh-zVh"/>
+                <constraint firstAttribute="trailing" secondItem="YSZ-Yn-gFe" secondAttribute="trailing" constant="12" id="SWV-kd-0gg"/>
+                <constraint firstItem="Sdj-Te-BN2" firstAttribute="top" secondItem="YSZ-Yn-gFe" secondAttribute="bottom" constant="4" id="VCk-7w-ieN"/>
+                <constraint firstItem="Mkf-jI-gy1" firstAttribute="centerX" secondItem="Sdj-Te-BN2" secondAttribute="centerX" id="WYN-1g-Ldu"/>
+                <constraint firstAttribute="trailing" secondItem="ZEk-sj-tiy" secondAttribute="trailing" id="Z5D-ql-1nJ"/>
+                <constraint firstItem="Sdj-Te-BN2" firstAttribute="top" secondItem="YSZ-Yn-gFe" secondAttribute="bottom" constant="4" id="b25-q1-Vgs"/>
+                <constraint firstItem="YSZ-Yn-gFe" firstAttribute="leading" secondItem="Jc0-kg-efe" secondAttribute="leading" constant="12" id="bim-hY-RpI"/>
+                <constraint firstItem="YSZ-Yn-gFe" firstAttribute="width" secondItem="Jc0-kg-efe" secondAttribute="width" constant="-24" id="fSQ-OL-SHd"/>
+                <constraint firstAttribute="bottom" secondItem="Sdj-Te-BN2" secondAttribute="bottom" id="i7P-jI-XF1"/>
+                <constraint firstItem="ZEk-sj-tiy" firstAttribute="leading" secondItem="Jc0-kg-efe" secondAttribute="leading" id="kHh-hl-ZqS"/>
+                <constraint firstItem="Sdj-Te-BN2" firstAttribute="leading" secondItem="Jc0-kg-efe" secondAttribute="leading" id="vPt-jV-C6z"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+            <viewLayoutGuide key="safeArea" id="hVM-WI-71I"/>
+            <point key="canvasLocation" x="52.799999999999997" y="48.575712143928037"/>
+        </view>
+    </objects>
+</document>

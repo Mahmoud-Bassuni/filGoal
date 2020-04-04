@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChampionsViewController">
+            <connections>
+                <outlet property="sponser" destination="VOl-ia-rWy" id="2QI-h1-8Zi"/>
+                <outlet property="sponsorImgConstraintHeight" destination="245-MD-H0t" id="qQe-u1-kTK"/>
+                <outlet property="tableView" destination="qcH-IA-LtW" id="IdA-UO-Eqj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VOl-ia-rWy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="245-MD-H0t"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="qcH-IA-LtW">
+                    <rect key="frame" x="10" y="10" width="300" height="470"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="I44-gz-r07"/>
+                        <outlet property="delegate" destination="-1" id="MIJ-6i-NOV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VOl-ia-rWy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ETa-fs-z77"/>
+                <constraint firstItem="qcH-IA-LtW" firstAttribute="top" secondItem="VOl-ia-rWy" secondAttribute="bottom" constant="10" id="N3u-He-dl4"/>
+                <constraint firstAttribute="trailing" secondItem="qcH-IA-LtW" secondAttribute="trailing" constant="10" id="PXM-IQ-Ld7"/>
+                <constraint firstAttribute="trailing" secondItem="VOl-ia-rWy" secondAttribute="trailing" id="QKb-3m-lax"/>
+                <constraint firstAttribute="bottom" secondItem="qcH-IA-LtW" secondAttribute="bottom" constant="39" id="ZH7-Oe-ZIg"/>
+                <constraint firstItem="VOl-ia-rWy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cly-tP-m7F"/>
+                <constraint firstItem="qcH-IA-LtW" firstAttribute="top" secondItem="VOl-ia-rWy" secondAttribute="bottom" constant="10" id="hSO-bJ-B5S"/>
+                <constraint firstItem="qcH-IA-LtW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="oRW-gb-0uz"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+        </view>
+    </objects>
+</document>

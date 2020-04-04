@@ -1,0 +1,5 @@
+XSym
+0070
+0f5f0c55f68758f6868507cad16d82c2
+../../../BlocksKit/BlocksKit/UIKit/UIImagePickerController+BlocksKit.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

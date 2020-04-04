@@ -1,0 +1,5 @@
+XSym
+0061
+68ffe97f8568f5205e59fa1d764d9b5c
+../../../MXSegmentedPager/MXSegmentedPager/MXSegmentedPager.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Xcode 7.0">
+    <entity name="NotificationItem" syncable="YES">
+        <attribute name="itemDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemImgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemTxt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="markAsRead" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NotificationItem" positionX="-54" positionY="-9" width="128" height="135"/>
+    </elements>
+</model>

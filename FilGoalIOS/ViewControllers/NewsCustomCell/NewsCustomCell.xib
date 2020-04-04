@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN Next LT W23 Bold.ttf">
+            <string>DINNextLTW23-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsCustomCell" rowHeight="112" id="KGk-i7-Jjw" customClass="NewsCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gID-R6-Jr2">
+                        <rect key="frame" x="262" y="0.0" width="58" height="60"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="wuF-pN-g5G"/>
+                        </constraints>
+                        <state key="normal" image="IBG-delete.png">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tVd-J2-bv7"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VBw-Yy-bQ4">
+                        <rect key="frame" x="254" y="0.0" width="0.0" height="60"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="NUf-8e-4sF"/>
+                        </constraints>
+                        <state key="normal" title="تحديد  كمقرؤة"/>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bRy-Ia-we7"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1O-I6-5on">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_holder" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-eT-Vht">
+                                <rect key="frame" x="162" y="7" width="142" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Wzx-tC-WPY"/>
+                                    <constraint firstAttribute="width" constant="142" id="vH0-zq-KHH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_button" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-Xo-fzN">
+                                <rect key="frame" x="212" y="26" width="43" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Zvb-WS-1I1"/>
+                                    <constraint firstAttribute="width" constant="43" id="qh6-fr-eGe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="yVh-ky-HvH">
+                                <rect key="frame" x="16" y="8" width="138" height="54"/>
+                                <fontDescription key="fontDescription" name="DINNextLTW23-Bold" family="DIN Next LT W23" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PPZ-lL-2pL">
+                                <rect key="frame" x="223" y="36" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkO-d5-xhy">
+                                <rect key="frame" x="16" y="70" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.60999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NkO-d5-xhy" secondAttribute="bottom" constant="14" id="G3Q-Gf-Ije"/>
+                            <constraint firstAttribute="trailing" secondItem="Dbv-eT-Vht" secondAttribute="trailing" constant="16" id="HSf-mp-JQV"/>
+                            <constraint firstItem="Dbv-eT-Vht" firstAttribute="top" secondItem="u1O-I6-5on" secondAttribute="top" constant="7" id="OqT-VJ-z7J"/>
+                            <constraint firstItem="PPZ-lL-2pL" firstAttribute="centerY" secondItem="Dbv-eT-Vht" secondAttribute="centerY" constant="-5.5" id="OwH-wE-5L0"/>
+                            <constraint firstItem="yVh-ky-HvH" firstAttribute="top" secondItem="u1O-I6-5on" secondAttribute="top" constant="8" id="WsJ-QC-lZQ"/>
+                            <constraint firstItem="sCu-Xo-fzN" firstAttribute="centerX" secondItem="Dbv-eT-Vht" secondAttribute="centerX" constant="0.5" id="ZRp-gQ-n10"/>
+                            <constraint firstItem="Dbv-eT-Vht" firstAttribute="leading" secondItem="NkO-d5-xhy" secondAttribute="trailing" constant="8" id="eop-fd-Yi2"/>
+                            <constraint firstItem="yVh-ky-HvH" firstAttribute="leading" secondItem="u1O-I6-5on" secondAttribute="leading" constant="16" id="gIx-SC-Uqe"/>
+                            <constraint firstItem="NkO-d5-xhy" firstAttribute="leading" secondItem="u1O-I6-5on" secondAttribute="leading" constant="16" id="gOK-tW-oih"/>
+                            <constraint firstItem="sCu-Xo-fzN" firstAttribute="centerY" secondItem="Dbv-eT-Vht" secondAttribute="centerY" constant="-5.5" id="j3p-Ih-PrS"/>
+                            <constraint firstAttribute="bottom" secondItem="Dbv-eT-Vht" secondAttribute="bottom" constant="8" id="ksp-Hc-hlm"/>
+                            <constraint firstItem="PPZ-lL-2pL" firstAttribute="centerX" secondItem="Dbv-eT-Vht" secondAttribute="centerX" id="n5S-gh-gQ0"/>
+                            <constraint firstItem="NkO-d5-xhy" firstAttribute="top" secondItem="yVh-ky-HvH" secondAttribute="bottom" constant="8" id="oyp-jC-ALS"/>
+                            <constraint firstItem="Dbv-eT-Vht" firstAttribute="leading" secondItem="yVh-ky-HvH" secondAttribute="trailing" constant="8" id="sxz-YC-thh"/>
+                            <constraint firstAttribute="bottom" secondItem="yVh-ky-HvH" secondAttribute="bottom" constant="43" id="w0H-IS-kYI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="u1O-I6-5on" secondAttribute="bottom" id="B13-PX-3MN"/>
+                    <constraint firstAttribute="bottom" secondItem="gID-R6-Jr2" secondAttribute="bottom" constant="44.5" id="Efx-gj-MNA"/>
+                    <constraint firstItem="gID-R6-Jr2" firstAttribute="leading" secondItem="VBw-Yy-bQ4" secondAttribute="trailing" constant="8" id="Got-EU-RQp"/>
+                    <constraint firstAttribute="bottom" secondItem="VBw-Yy-bQ4" secondAttribute="bottom" constant="44.5" id="Kal-w3-gTu"/>
+                    <constraint firstItem="u1O-I6-5on" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OyM-G2-44c"/>
+                    <constraint firstItem="gID-R6-Jr2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dDm-Nh-J7p"/>
+                    <constraint firstAttribute="trailing" secondItem="u1O-I6-5on" secondAttribute="trailing" id="fsG-ib-e7q"/>
+                    <constraint firstItem="VBw-Yy-bQ4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lov-4s-yUc"/>
+                    <constraint firstAttribute="trailing" secondItem="gID-R6-Jr2" secondAttribute="trailing" id="nYB-WL-spI"/>
+                    <constraint firstItem="u1O-I6-5on" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yd9-lZ-IVt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="PPZ-lL-2pL" id="V4X-d8-vt8"/>
+                <outlet property="contentViewLeftConstraint" destination="OyM-G2-44c" id="LFo-kO-uAF"/>
+                <outlet property="contentViewRightConstraint" destination="fsG-ib-e7q" id="L5p-NR-DFs"/>
+                <outlet property="dateLabel" destination="NkO-d5-xhy" id="eJc-5a-Cuk"/>
+                <outlet property="deleteBtn" destination="gID-R6-Jr2" id="4oj-uJ-FAc"/>
+                <outlet property="itemImg" destination="Dbv-eT-Vht" id="qDC-ns-kor"/>
+                <outlet property="itemLbl" destination="yVh-ky-HvH" id="Cvw-5q-FsN"/>
+                <outlet property="myContentView" destination="u1O-I6-5on" id="DMg-Sw-wRg"/>
+                <outlet property="playImg" destination="sCu-Xo-fzN" id="Cl4-Bn-Zj3"/>
+                <outlet property="setAsReadBtn" destination="VBw-Yy-bQ4" id="rud-ka-ulc"/>
+            </connections>
+            <point key="canvasLocation" x="553" y="314.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IBG-delete.png" width="34" height="34"/>
+        <image name="place_holder" width="216" height="133"/>
+        <image name="play_button" width="42" height="43"/>
+    </resources>
+</document>

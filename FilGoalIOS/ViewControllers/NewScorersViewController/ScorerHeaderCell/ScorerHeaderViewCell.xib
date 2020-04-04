@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTW23Regular.otf">
+            <string>DINNextLTW23Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ScorerHeaderViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" المباريات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss0-9k-Yod">
+                        <rect key="frame" x="71" y="3" width="42" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="x5h-Ym-qN9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="12"/>
+                        <color key="textColor" red="0.55562496185302734" green="0.55563843250274658" blue="0.55563122034072876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نسبة التهديف" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-M2-nmj">
+                        <rect key="frame" x="0.0" y="3" width="70" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="IfQ-NP-Olj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="12"/>
+                        <color key="textColor" red="0.55562496185302734" green="0.55563843250274658" blue="0.55563122034072876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الإسم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZr-gq-i8t">
+                        <rect key="frame" x="157" y="3" width="158" height="37"/>
+                        <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="12"/>
+                        <color key="textColor" red="0.55562496185302734" green="0.55563843250274658" blue="0.55563122034072876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الأهداف" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC8-Cg-kA1">
+                        <rect key="frame" x="114" y="3" width="44" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="4NA-xY-44B"/>
+                            <constraint firstAttribute="width" constant="44" id="BfH-XK-ue3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINNextLTW23Regular" family="DIN Next LT W23" pointSize="12"/>
+                        <color key="textColor" red="0.55562496185302734" green="0.55563843250274658" blue="0.55563122034072876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pC8-Cg-kA1" firstAttribute="leading" secondItem="ss0-9k-Yod" secondAttribute="trailing" constant="1" id="0Mc-vT-9uF"/>
+                    <constraint firstItem="SAP-M2-nmj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="2wf-8f-tfa"/>
+                    <constraint firstAttribute="trailing" secondItem="dZr-gq-i8t" secondAttribute="trailing" constant="5" id="CIF-Pf-UFY"/>
+                    <constraint firstAttribute="bottom" secondItem="dZr-gq-i8t" secondAttribute="bottom" constant="3.5" id="MIu-ek-h2Y"/>
+                    <constraint firstItem="pC8-Cg-kA1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="NEA-iz-KkA"/>
+                    <constraint firstAttribute="bottom" secondItem="pC8-Cg-kA1" secondAttribute="bottom" constant="3.5" id="QUB-GF-B6Z"/>
+                    <constraint firstItem="ss0-9k-Yod" firstAttribute="leading" secondItem="SAP-M2-nmj" secondAttribute="trailing" constant="1" id="RpR-zw-6o6"/>
+                    <constraint firstItem="dZr-gq-i8t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="aNC-KH-Dpv"/>
+                    <constraint firstItem="pC8-Cg-kA1" firstAttribute="leading" secondItem="ss0-9k-Yod" secondAttribute="trailing" constant="1" id="aaF-R8-tK4"/>
+                    <constraint firstItem="ss0-9k-Yod" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="e9D-IC-X2s"/>
+                    <constraint firstAttribute="bottom" secondItem="ss0-9k-Yod" secondAttribute="bottom" constant="3.5" id="ivn-bl-1Nd"/>
+                    <constraint firstItem="dZr-gq-i8t" firstAttribute="leading" secondItem="pC8-Cg-kA1" secondAttribute="trailing" constant="-1" id="m4C-EV-AdA"/>
+                    <constraint firstItem="SAP-M2-nmj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="n3U-ZS-oU1"/>
+                    <constraint firstAttribute="bottom" secondItem="SAP-M2-nmj" secondAttribute="bottom" constant="3.5" id="qOf-di-yZY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94047349691390991" green="0.94049555063247681" blue="0.9404836893081665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="33.5" y="55"/>
+        </tableViewCell>
+    </objects>
+</document>

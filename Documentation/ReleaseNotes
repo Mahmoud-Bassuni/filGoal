@@ -1,0 +1,23 @@
+====================================================================================================================================
+FilGoal Version 3.2.0 (1.0) on code and 2.2.0 on AppStore:
+1- Solved a problem where the new sponsor image wasn't appearing and the reason of that was 2 things:
+a. We changed to Amazon
+b. there was a bug on the code where the Service manager object was caching the old api requests so when he was sending the appinfo request there was some other headers was sent with it, (I THINK): the reason this bug happened was bec. we transfered everything to Amazon
+
+====================================================================================================================================
+FilGoal Version 3.3.0 (1.0) on code and 3.3.0 on AppStore — Release Notes:
+1-  Add the new sponsor banner and make it clickable
+2-  Make all the old coSponsors clickable
+3-  Fix bug - the prediction button which was sending errors
+4-  Fix bug - page control inset at the featured news in home screen
+5-  Fix bug - video details screen table not displaying all the articles in “related articles + content you might like”
+6-  Fix bug - video details screen: 1- more buttons are tappable even though they are hidden, 2- when present screen with one of the buttons then return you can’t close the more menu
+7-  Fix bug - in author profile screen: 1- duplicate content in the list, 2- when you load all the author articles and still try to load more, all the articles will be removed from list
+8-  Fix bug #22053 - [Home Screen] Opening an Article / Album / Video and slide right to the next Article / Album / Video loads the same Article / Album / Video
+9-  Fix bug #22055 - [Matches] Check why honor sponsor not loading in match center
+10- Fix bug #22056 - When you press on an author image to load his articles -> Internet connection error appears
+11- Fix bug #22057 - [Author Articles] Make author name link to his profile & articles screen
+12- Fix bug #22065 - [Home Screen] App crash when u slide the last article / video / album to the right
+13- Fix bug #22071 - [Author Articles] Check Why author بسام أبو بكر articles not loading
+14- Fix bug #22074 - [iOS][Teams] Team link not loading website[iOS][Teams] Team link not loading website
+====================================================================================================================================

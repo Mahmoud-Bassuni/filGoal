@@ -1,0 +1,5 @@
+XSym
+0105
+f33eb18578f26d1be49ce7c4bf28357a
+../../../GSKStretchyHeaderView/GSKStretchyHeaderView/Classes/Private/UIScrollView+GSKStretchyHeaderView.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

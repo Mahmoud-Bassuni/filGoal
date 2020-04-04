@@ -1,0 +1,5 @@
+XSym
+0056
+04d8f960db4ad2f83f0ea65e748b4e01
+../../../MXPagerView/MXPagerView/MXPagerViewController.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

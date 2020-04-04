@@ -1,0 +1,5 @@
+XSym
+0049
+2b3632b4a00dabd6d1d97babc746e96b
+../../../JDFTooltips/Pod/Classes/JDFTooltipView.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

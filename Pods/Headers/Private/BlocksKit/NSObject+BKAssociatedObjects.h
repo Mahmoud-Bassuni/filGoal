@@ -1,0 +1,5 @@
+XSym
+0064
+6d8cd215aefcc4564543d9d2fc81e247
+../../../BlocksKit/BlocksKit/Core/NSObject+BKAssociatedObjects.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

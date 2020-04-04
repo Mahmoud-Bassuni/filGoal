@@ -1,0 +1,5 @@
+XSym
+0071
+def9e5dbd6d2c72c7d769d68dbbec337
+../../../MXSegmentedPager/MXSegmentedPager/MXSegmentedPagerController.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

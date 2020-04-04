@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTArabic-Medium.ttf">
+            <string>DINNextLTArabic-Medium</string>
+        </array>
+        <array key="DinnextRegular.ttf">
+            <string>DINNextLTW23-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoSearchViewController">
+            <connections>
+                <outlet property="indLoader" destination="mof-XG-XIH" id="qkr-s6-E7Y"/>
+                <outlet property="keywordLbl" destination="ecg-ee-qe9" id="sbT-DL-ih1"/>
+                <outlet property="loadingLabel" destination="D7s-7l-Yhy" id="ysW-uG-YVy"/>
+                <outlet property="tv" destination="qcH-IA-LtW" id="nqb-Pt-89n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="205" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="qcH-IA-LtW">
+                    <rect key="frame" x="0.0" y="50" width="320" height="430"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="I44-gz-r07"/>
+                        <outlet property="delegate" destination="-1" id="MIJ-6i-NOV"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="mof-XG-XIH">
+                    <rect key="frame" x="150" y="230" width="20" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري تحميل الفيديوهات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7s-7l-Yhy">
+                    <rect key="frame" x="0.0" y="296" width="320" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="sUw-Dq-eIV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTW23-Regular" family="DIN Next LT W23" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-ee-qe9">
+                    <rect key="frame" x="10" y="10" width="300" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="OfP-9H-w94"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINNextLTArabic-Medium" family="DIN Next LT Arabic" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ecg-ee-qe9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="5bD-X1-st8"/>
+                <constraint firstAttribute="bottom" secondItem="D7s-7l-Yhy" secondAttribute="bottom" constant="152" id="83X-jM-hzi"/>
+                <constraint firstItem="D7s-7l-Yhy" firstAttribute="top" secondItem="mof-XG-XIH" secondAttribute="bottom" constant="46" id="9wb-Xa-DCu"/>
+                <constraint firstAttribute="trailing" secondItem="ecg-ee-qe9" secondAttribute="trailing" constant="10" id="9y1-Np-MDz"/>
+                <constraint firstItem="D7s-7l-Yhy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B8Z-hv-Qni"/>
+                <constraint firstItem="qcH-IA-LtW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BJd-PO-xKe"/>
+                <constraint firstItem="ecg-ee-qe9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="b1z-mR-8au"/>
+                <constraint firstItem="D7s-7l-Yhy" firstAttribute="centerX" secondItem="mof-XG-XIH" secondAttribute="centerX" id="htc-6F-Y5e"/>
+                <constraint firstItem="ecg-ee-qe9" firstAttribute="centerX" secondItem="qcH-IA-LtW" secondAttribute="centerX" id="lSU-ma-xm2"/>
+                <constraint firstItem="qcH-IA-LtW" firstAttribute="top" secondItem="ecg-ee-qe9" secondAttribute="bottom" constant="4" id="lYU-5S-axd"/>
+                <constraint firstAttribute="bottom" secondItem="qcH-IA-LtW" secondAttribute="bottom" id="sEN-jp-s34"/>
+                <constraint firstAttribute="trailing" secondItem="qcH-IA-LtW" secondAttribute="trailing" id="whU-ey-EAE"/>
+                <constraint firstAttribute="trailing" secondItem="D7s-7l-Yhy" secondAttribute="trailing" id="wk8-tx-yCM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
